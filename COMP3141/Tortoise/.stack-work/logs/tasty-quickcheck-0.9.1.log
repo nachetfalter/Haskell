@@ -1,0 +1,6 @@
+Configuring tasty-quickcheck-0.9.1...
+Preprocessing library for tasty-quickcheck-0.9.1..
+Building library for tasty-quickcheck-0.9.1..
+[1 of 1] Compiling Test.Tasty.QuickCheck ( Test\Tasty\QuickCheck.hs, .stack-work\dist\5c8418a7\build\Test\Tasty\QuickCheck.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\tasty-quickcheck-0.9.1-6IkG8G6y1lVLKp7VrM1lj6
+Registering library for tasty-quickcheck-0.9.1..

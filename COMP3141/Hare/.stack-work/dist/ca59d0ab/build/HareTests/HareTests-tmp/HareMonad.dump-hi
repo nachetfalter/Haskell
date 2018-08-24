@@ -1,0 +1,882 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-19 00:06:59.8375065 UTC
+
+interface main@main:HareMonad 8002
+  interface hash: 3e015effbc682132d191cc1f287fb870
+  ABI hash: cdbd7bb00ff56ea48cd4802879460fe7
+  export-list hash: 66daa7df5b4e7df25f6cea180671757e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 66f2d13c09dea76450c1f624c0bd3f8b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HareMonad.failure
+  HareMonad.hare
+  HareMonad.readCharacter
+  HareMonad.Hare
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 2c56a0c43327cbbcb6e7a55bf05443c9
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    GHC.Base.Alternative (HareMonad.Hare f)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U(U,U),U,U,U,U),C(C1(U)),A,C(U),A)><L,U(A,U,C(C1(U)),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *)
+                      ($dMonad :: GHC.Base.Monad f)
+                      ($dAlternative :: GHC.Base.Alternative f).
+                  @ (HareMonad.Hare f)
+                  (HareMonad.$fAlternativeHare_$cp1Alternative
+                     @ f
+                     $dMonad
+                     $dAlternative)
+                  (HareMonad.$fAlternativeHare_$cempty @ f $dMonad $dAlternative)
+                  (HareMonad.$fAlternativeHare_$c<|> @ f $dMonad $dAlternative)
+                  (HareMonad.$fAlternativeHare_$csome @ f $dMonad $dAlternative)
+                  (HareMonad.$fAlternativeHare_$cmany @ f $dMonad $dAlternative) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare1 ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a.
+    HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, [a])
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><S(LLC(C(S))LL),U(A,A,C(C1(U)),A,A)><L,C(U)><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   @ a
+                   (eta :: HareMonad.Hare f a)
+                   (eta1 :: GHC.Base.String) ->
+                 let {
+                   lvl :: GHC.Base.Applicative f = GHC.Base.$p1Monad @ f $dMonad
+                 } in
+                 let {
+                   $dFunctor :: GHC.Base.Functor f = GHC.Base.$p1Applicative @ f lvl
+                 } in
+                 letrec {
+                   lvl1 :: (GHC.Base.String, [a] -> [a]) -> f (GHC.Base.String, [a])
+                     {- Arity: 1 -}
+                   = \ (ds :: (GHC.Base.String, [a] -> [a])) ->
+                     case ds of wild { (,) s' rf ->
+                     GHC.Base.>>=
+                       @ f
+                       $dMonad
+                       @ (GHC.Base.String, [a])
+                       @ (GHC.Base.String, [a])
+                       (many_v s')
+                       (\ (ds1 :: (GHC.Base.String, [a])) ->
+                        case ds1 of wild1 { (,) s'' rx ->
+                        GHC.Base.return
+                          @ f
+                          $dMonad
+                          @ (GHC.Base.String, [a])
+                          (s'', rf rx) }) }
+                   many_v :: GHC.Base.String -> f (GHC.Base.String, [a])
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (s :: GHC.Base.String) ->
+                     GHC.Base.<|>
+                       @ f
+                       $dAlternative
+                       @ (GHC.Base.String, [a])
+                       (GHC.Base.>>=
+                          @ f
+                          $dMonad
+                          @ (GHC.Base.String, [a] -> [a])
+                          @ (GHC.Base.String, [a])
+                          (GHC.Base.fmap
+                             @ f
+                             $dFunctor
+                             @ (GHC.Base.String, a)
+                             @ (GHC.Base.String, [a] -> [a])
+                             (HareMonad.$fAlternativeHare2 @ a)
+                             (eta `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) s))
+                          lvl1)
+                       (GHC.Base.pure
+                          @ f
+                          lvl
+                          @ (GHC.Base.String, [a])
+                          (s, GHC.Types.[] @ a))
+                 } in
+                 many_v eta1) -}
+054903ac6299a6db618f4d61b12969f7
+  $fAlternativeHare2 ::
+    ([GHC.Types.Char], a) -> ([GHC.Types.Char], [a] -> [a])
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a (ds :: ([GHC.Types.Char], a)) ->
+                 case ds of wild { (,) x y -> (x, GHC.Types.: @ a y) }) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare3 ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a.
+    HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, [a])
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><L,U(A,A,C(C1(U)),A,A)><L,C(U)><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   @ a
+                   (eta :: HareMonad.Hare f a)
+                   (eta1 :: GHC.Base.String) ->
+                 let {
+                   lvl :: GHC.Base.Applicative f = GHC.Base.$p1Monad @ f $dMonad
+                 } in
+                 let {
+                   $dFunctor :: GHC.Base.Functor f = GHC.Base.$p1Applicative @ f lvl
+                 } in
+                 letrec {
+                   lvl1 :: (GHC.Base.String, [a] -> [a]) -> f (GHC.Base.String, [a])
+                     {- Arity: 1 -}
+                   = \ (ds :: (GHC.Base.String, [a] -> [a])) ->
+                     case ds of wild { (,) s' rf ->
+                     GHC.Base.>>=
+                       @ f
+                       $dMonad
+                       @ (GHC.Base.String, [a])
+                       @ (GHC.Base.String, [a])
+                       (GHC.Base.<|>
+                          @ f
+                          $dAlternative
+                          @ (GHC.Base.String, [a])
+                          (some_v s')
+                          (GHC.Base.pure
+                             @ f
+                             lvl
+                             @ (GHC.Base.String, [a])
+                             (s', GHC.Types.[] @ a)))
+                       (\ (ds1 :: (GHC.Base.String, [a])) ->
+                        case ds1 of wild1 { (,) s'' rx ->
+                        GHC.Base.return
+                          @ f
+                          $dMonad
+                          @ (GHC.Base.String, [a])
+                          (s'', rf rx) }) }
+                   some_v :: GHC.Base.String -> f (GHC.Base.String, [a])
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (eta2 :: GHC.Base.String) ->
+                     GHC.Base.>>=
+                       @ f
+                       $dMonad
+                       @ (GHC.Base.String, [a] -> [a])
+                       @ (GHC.Base.String, [a])
+                       (GHC.Base.fmap
+                          @ f
+                          $dFunctor
+                          @ (GHC.Base.String, a)
+                          @ (GHC.Base.String, [a] -> [a])
+                          (HareMonad.$fAlternativeHare2 @ a)
+                          (eta `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) eta2))
+                       lvl1
+                 } in
+                 some_v eta1) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare4 ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a.
+    HareMonad.Hare f a
+    -> HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><S(LLC(C(S))LL),1*U(A,A,1*C1(C1(U)),A,A)><L,1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   @ a
+                   (ds :: HareMonad.Hare f a)
+                   (ds1 :: HareMonad.Hare f a)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.<|>
+                   @ f
+                   $dAlternative
+                   @ (GHC.Base.String, a)
+                   (ds `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) s)
+                   (ds1 `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) s)) -}
+7dd388e079decfd8ca5e2e2a7673167f
+  $fAlternativeHare5 ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a. GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LSLLL),1*U(A,1*U,A,A,A)><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   @ a
+                   (eta :: GHC.Base.String) ->
+                 GHC.Base.empty @ f $dAlternative @ (GHC.Base.String, a)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare_$c<|> ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a.
+    HareMonad.Hare f a -> HareMonad.Hare f a -> HareMonad.Hare f a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><S(LLC(C(S))LL),1*U(A,A,1*C1(C1(U)),A,A)><L,1*C1(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fAlternativeHare4
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R <GHC.Base.Alternative f>_R
+                 ->_R forall (a :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R <HareMonad.Hare f a>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare_$cempty ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a. HareMonad.Hare f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LSLLL),1*U(A,1*U,A,A,A)><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fAlternativeHare5
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R <GHC.Base.Alternative f>_R
+                 ->_R forall (a :: <*>_N). Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare_$cmany ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a. HareMonad.Hare f a -> HareMonad.Hare f [a]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><S(LLC(C(S))LL),U(A,A,C(C1(U)),A,A)><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fAlternativeHare1
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R <GHC.Base.Alternative f>_R
+                 ->_R forall (a :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <[a]>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare_$cp1Alternative ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    GHC.Base.Applicative (HareMonad.Hare f)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(U(U,U),U,U,U,U),C(C1(U)),A,C(U),A)><L,A>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   ($dAlternative :: GHC.Base.Alternative f) ->
+                 HareMonad.$fApplicativeHare @ f $dMonad) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fAlternativeHare_$csome ::
+    (GHC.Base.Monad f, GHC.Base.Alternative f) =>
+    forall a. HareMonad.Hare f a -> HareMonad.Hare f [a]
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><L,U(A,A,C(C1(U)),A,A)><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fAlternativeHare3
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R <GHC.Base.Alternative f>_R
+                 ->_R forall (a :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <[a]>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare ::
+    GHC.Base.Monad f => GHC.Base.Applicative (HareMonad.Hare f)
+  DFunId
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,U(U(U(U,U),U,U,U,U),C(C1(U)),A,C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dMonad :: GHC.Base.Monad f).
+                  @ (HareMonad.Hare f)
+                  (HareMonad.$fApplicativeHare_$cp1Applicative @ f $dMonad)
+                  (HareMonad.$fApplicativeHare_$cpure @ f $dMonad)
+                  (HareMonad.$fApplicativeHare_$c<*> @ f $dMonad)
+                  (HareMonad.$fApplicativeHare_$c*> @ f $dMonad)
+                  (HareMonad.$fApplicativeHare_$c<* @ f $dMonad) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare1 ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a
+    -> HareMonad.Hare f b -> GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   @ b
+                   (eta :: HareMonad.Hare f a)
+                   (eta1 :: HareMonad.Hare f b)
+                   (eta2 :: GHC.Base.String) ->
+                 HareMonad.$fApplicativeHare3
+                   @ f
+                   $dMonad
+                   @ b
+                   @ a
+                   (\ (eta3 :: GHC.Base.String)[OneShot] ->
+                    GHC.Base.fmap
+                      @ f
+                      (GHC.Base.$p1Applicative @ f (GHC.Base.$p1Monad @ f $dMonad))
+                      @ (GHC.Base.String, a)
+                      @ (GHC.Base.String, b -> a)
+                      (HareMonad.$fApplicativeHare2 @ b @ a)
+                      (eta `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) eta3))
+                     `cast`
+                   (Sym (HareMonad.N:Hare[0] <f>_R <b -> a>_N))
+                   eta1
+                   eta2) -}
+9b3507844bde19d03e8799be6275f0a5
+  $fApplicativeHare2 ::
+    ([GHC.Types.Char], a) -> ([GHC.Types.Char], b -> a)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ b @ a (ds :: ([GHC.Types.Char], a)) ->
+                 case ds of wild { (,) x y -> (x, \ (ds1 :: b) -> y) }) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare3 ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f (a -> b)
+    -> HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, b)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   @ b
+                   (ds :: HareMonad.Hare f (a -> b))
+                   (ds1 :: HareMonad.Hare f a)
+                   (eta :: GHC.Base.String) ->
+                 GHC.Base.>>=
+                   @ f
+                   $dMonad
+                   @ (GHC.Base.String, a -> b)
+                   @ (GHC.Base.String, b)
+                   (ds `cast` (HareMonad.N:Hare[0] <f>_R <a -> b>_N) eta)
+                   (\ (ds2 :: (GHC.Base.String, a -> b)) ->
+                    case ds2 of wild { (,) s' rf ->
+                    GHC.Base.>>=
+                      @ f
+                      $dMonad
+                      @ (GHC.Base.String, a)
+                      @ (GHC.Base.String, b)
+                      (ds1 `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) s')
+                      (\ (ds3 :: (GHC.Base.String, a)) ->
+                       case ds3 of wild1 { (,) s'' rx ->
+                       GHC.Base.return
+                         @ f
+                         $dMonad
+                         @ (GHC.Base.String, b)
+                         (s'', rf rx) }) })) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare4 ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a
+    -> HareMonad.Hare f b -> GHC.Base.String -> f (GHC.Base.String, b)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   @ b
+                   (eta :: HareMonad.Hare f a)
+                   (eta1 :: HareMonad.Hare f b)
+                   (eta2 :: GHC.Base.String) ->
+                 HareMonad.$fApplicativeHare3
+                   @ f
+                   $dMonad
+                   @ b
+                   @ b
+                   (\ (eta3 :: GHC.Base.String)[OneShot] ->
+                    GHC.Base.fmap
+                      @ f
+                      (GHC.Base.$p1Applicative @ f (GHC.Base.$p1Monad @ f $dMonad))
+                      @ (GHC.Base.String, a)
+                      @ (GHC.Base.String, b -> b)
+                      (HareMonad.$fApplicativeHare5 @ b @ a)
+                      (eta `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) eta3))
+                     `cast`
+                   (Sym (HareMonad.N:Hare[0] <f>_R <b -> b>_N))
+                   eta1
+                   eta2) -}
+e597b3afa258ffb5c7b633a5d86ffd9d
+  $fApplicativeHare5 ::
+    ([GHC.Types.Char], a) -> ([GHC.Types.Char], b -> b)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ b @ a (ds :: ([GHC.Types.Char], a)) ->
+                 case ds of wild { (,) x y -> (x, GHC.Base.breakpoint @ b) }) -}
+439cc8905f1f177bebdaa75a85df2c71
+  $fApplicativeHare6 ::
+    GHC.Base.Monad f =>
+    forall a. a -> GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(LC(S)LLL)LLLL),1*U(1*U(A,1*C1(U),A,A,A),A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   (eta :: a)
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Base.pure
+                   @ f
+                   (GHC.Base.$p1Monad @ f $dMonad)
+                   @ (GHC.Base.String, a)
+                   (eta1, eta)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare_$c*> ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a -> HareMonad.Hare f b -> HareMonad.Hare f b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fApplicativeHare4
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R <HareMonad.Hare f b>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <b>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare_$c<* ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a -> HareMonad.Hare f b -> HareMonad.Hare f a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fApplicativeHare1
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R <HareMonad.Hare f b>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare_$c<*> ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f (a -> b)
+    -> HareMonad.Hare f a -> HareMonad.Hare f b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(A,C(C1(U)),A,C(U),A)><L,1*C1(U)><L,C(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fApplicativeHare3
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <HareMonad.Hare f (a -> b)>_R
+                      ->_R <HareMonad.Hare f a>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <b>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare_$cp1Applicative ::
+    GHC.Base.Monad f => GHC.Base.Functor (HareMonad.Hare f)
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(1*U(1*U(C(C1(U)),A),A,A,A,A),A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (f :: * -> *) ($dMonad :: GHC.Base.Monad f) ->
+                 HareMonad.$fFunctorHare
+                   @ f
+                   (GHC.Base.$p1Applicative @ f (GHC.Base.$p1Monad @ f $dMonad))) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fApplicativeHare_$cpure ::
+    GHC.Base.Monad f => forall a. a -> HareMonad.Hare f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(LC(S)LLL)LLLL),1*U(1*U(A,1*C1(U),A,A,A),A,A,A,A)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fApplicativeHare6
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N).
+                      <a>_R ->_R Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fFunctorHare ::
+    GHC.Base.Functor f => GHC.Base.Functor (HareMonad.Hare f)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dFunctor :: GHC.Base.Functor f).
+                  @ (HareMonad.Hare f)
+                  (HareMonad.$fFunctorHare_$cfmap @ f $dFunctor)
+                  (HareMonad.$fFunctorHare_$c<$ @ f $dFunctor) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fFunctorHare1 ::
+    GHC.Base.Functor f =>
+    forall a b.
+    a
+    -> HareMonad.Hare f b -> GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (eta :: a)
+                   (eta1 :: HareMonad.Hare f b)
+                   (eta2 :: GHC.Base.String) ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (GHC.Base.String, b)
+                   @ (GHC.Base.String, a)
+                   (\ (ds :: ([GHC.Types.Char], b)) ->
+                    case ds of wild { (,) x y -> (x, eta) })
+                   (eta1 `cast` (HareMonad.N:Hare[0] <f>_R <b>_N) eta2)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fFunctorHare2 ::
+    GHC.Base.Functor f =>
+    forall a b.
+    (a -> b)
+    -> HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, b)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,C(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ (f :: * -> *)
+                   ($dFunctor :: GHC.Base.Functor f)
+                   @ a
+                   @ b
+                   (f1 :: a -> b)
+                   (ds :: HareMonad.Hare f a)
+                   (eta :: GHC.Base.String) ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (GHC.Base.String, a)
+                   @ (GHC.Base.String, b)
+                   (GHC.Base.$fFunctor(,)_$cfmap @ [GHC.Types.Char] @ a @ b f1)
+                   (ds `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) eta)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fFunctorHare_$c<$ ::
+    GHC.Base.Functor f =>
+    forall a b. a -> HareMonad.Hare f b -> HareMonad.Hare f a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,U><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fFunctorHare1
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Functor f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <a>_R
+                      ->_R <HareMonad.Hare f b>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fFunctorHare_$cfmap ::
+    GHC.Base.Functor f =>
+    forall a b. (a -> b) -> HareMonad.Hare f a -> HareMonad.Hare f b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,C(U)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fFunctorHare2
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Functor f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <a -> b>_R
+                      ->_R <HareMonad.Hare f a>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <b>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare ::
+    GHC.Base.Monad f => GHC.Base.Monad (HareMonad.Hare f)
+  DFunId
+  {- Arity: 1,
+     Strictness: <L,U(U(U(U,U),U,U,U,U),C(C1(U)),A,C(U),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ (f :: * -> *) ($dMonad :: GHC.Base.Monad f).
+                  @ (HareMonad.Hare f)
+                  (HareMonad.$fApplicativeHare @ f $dMonad)
+                  (HareMonad.$fMonadHare_$c>>= @ f $dMonad)
+                  (HareMonad.$fMonadHare_$c>> @ f $dMonad)
+                  (HareMonad.$fApplicativeHare_$cpure @ f $dMonad)
+                  (HareMonad.$fMonadHare_$cfail @ f $dMonad) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare1 ::
+    GHC.Base.Monad f => GHC.Base.String -> HareMonad.Hare f a
+  {- Arity: 2, Strictness: <B,A><B,U>x, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   @ a
+                   (w :: GHC.Base.Monad f)
+                   (w1 :: GHC.Base.String) ->
+                 HareMonad.$wlvl @ f @ a w1) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare2 ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a
+    -> (a -> HareMonad.Hare f b)
+    -> GHC.Base.String
+    -> f (GHC.Base.String, b)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,A,A)><L,1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   @ b
+                   (eta :: HareMonad.Hare f a)
+                   (eta1 :: a -> HareMonad.Hare f b)
+                   (eta2 :: GHC.Base.String) ->
+                 let {
+                   $dApplicative :: GHC.Base.Applicative f
+                   = GHC.Base.$p1Monad @ f $dMonad
+                 } in
+                 let {
+                   lvl :: (GHC.Base.String, b) -> f (GHC.Base.String, b)
+                     {- Arity: 1, Strictness: <S,1*U(U,U)>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ (ds :: (GHC.Base.String, b)) ->
+                                    case ds of wild { (,) s'' rf ->
+                                    GHC.Base.pure
+                                      @ f
+                                      $dApplicative
+                                      @ (GHC.Base.String, b)
+                                      (s'', rf) }) -}
+                   = \ (ds :: (GHC.Base.String, b)) ->
+                     case ds of wild { (,) s'' rf ->
+                     GHC.Base.pure @ f $dApplicative @ (GHC.Base.String, b) wild }
+                 } in
+                 GHC.Base.>>=
+                   @ f
+                   $dMonad
+                   @ (GHC.Base.String, a)
+                   @ (GHC.Base.String, b)
+                   (eta `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) eta2)
+                   (\ (ds :: (GHC.Base.String, a)) ->
+                    case ds of wild { (,) s' ra ->
+                    GHC.Base.>>=
+                      @ f
+                      $dMonad
+                      @ (GHC.Base.String, b)
+                      @ (GHC.Base.String, b)
+                      ((eta1 ra) `cast` (HareMonad.N:Hare[0] <f>_R <b>_N) s')
+                      lvl })) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare_$c>> ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a -> HareMonad.Hare f b -> HareMonad.Hare f b
+  {- Arity: 3,
+     Strictness: <L,U(U(U(U,U),U,U,U,U),C(C1(U)),A,C(U),A)><L,U><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   @ b
+                   (m1 :: HareMonad.Hare f a)
+                   (k :: HareMonad.Hare f b)
+                   (eta :: GHC.Base.String) ->
+                 (HareMonad.$fMonadHare_$c>>=
+                    @ f
+                    $dMonad
+                    @ a
+                    @ b
+                    m1
+                    (\ (ds :: a) -> k))
+                   `cast`
+                 (HareMonad.N:Hare[0] <f>_R <b>_N)
+                   eta)
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R <HareMonad.Hare f b>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <b>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare_$c>>= ::
+    GHC.Base.Monad f =>
+    forall a b.
+    HareMonad.Hare f a
+    -> (a -> HareMonad.Hare f b) -> HareMonad.Hare f b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(LC(C(S))LLL),U(1*U,C(C1(U)),A,A,A)><L,1*C1(U)><L,C(C1(U))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.$fMonadHare2
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Monad f>_R
+                 ->_R forall (a :: <*>_N) (b :: <*>_N).
+                      <HareMonad.Hare f a>_R
+                      ->_R <a -> HareMonad.Hare f b>_R
+                      ->_R Sym (HareMonad.N:Hare[0] <f>_R <b>_N)) -}
+07a98526ba4f7aea856502ea77d21c81
+  $fMonadHare_$cfail ::
+    GHC.Base.Monad f => forall a. GHC.Base.String -> HareMonad.Hare f a
+  {- Arity: 2, Strictness: <B,A><B,U>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (f :: * -> *)
+                   ($dMonad :: GHC.Base.Monad f)
+                   @ a
+                   (eta :: GHC.Base.String) ->
+                 HareMonad.$fMonadHare1 @ f @ a $dMonad eta) -}
+cae2ba5c589a3e4ef9637d092d7d3f4c
+  $tc'Hare :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1313915734741216468##
+                   3599857405035615632##
+                   HareMonad.$trModule
+                   HareMonad.$tc'Hare1) -}
+1d73104e820ebb142a72b79bf5f20afd
+  $tc'Hare1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Hare"#) -}
+8ad7b405e452aee39024f8a423b553bb
+  $tcHare :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13138926563085820901##
+                   7829049561725204762##
+                   HareMonad.$trModule
+                   HareMonad.$tcHare1) -}
+64b6b39077042d93f1013181593ed3ee
+  $tcHare1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Hare"#) -}
+5e014d3ee8f6383a6d2c2cfe9038b5a9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HareMonad.$trModule2
+                   HareMonad.$trModule1) -}
+e413fd21c006f2d577642832ef657804
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "HareMonad"#) -}
+35b5f17fcf121c47e77fded3c7ddf23d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+07a98526ba4f7aea856502ea77d21c81
+  $wlvl :: GHC.Base.String -> HareMonad.Hare f a
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+07a98526ba4f7aea856502ea77d21c81
+  type role Hare representational nominal
+  newtype Hare (f :: * -> *) a
+    = Hare {runHare :: GHC.Base.String -> f (GHC.Base.String, a)}
+0eba2a2059121738db832b4855527cbc
+  failure ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) => HareMonad.Hare f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U,A,A,A)><L,A><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.failure1
+                  `cast`
+                (forall (f :: <* -> *>_N) (a :: <*>_N).
+                 <GHC.Base.Alternative f>_R
+                 ->_R <GHC.Base.Monad f>_R
+                 ->_R Sym (HareMonad.N:Hare[0] <f>_R <a>_N)) -}
+401c76ed3ffbcdc599c429608c3df062
+  failure1 ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    GHC.Base.String -> f (GHC.Base.String, a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U,A,A,A)><L,A><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ (f :: * -> *)
+                   @ a
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   ($dMonad :: GHC.Base.Monad f)
+                   (eta :: GHC.Base.String) ->
+                 GHC.Base.empty @ f $dAlternative @ (GHC.Base.String, a)) -}
+88729b9c4666ab1005b892a081f8eee6
+  hare ::
+    GHC.Base.Functor f => HareMonad.Hare f a -> GHC.Base.String -> f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   @ a
+                   ($dFunctor :: GHC.Base.Functor f)
+                   (a1 :: HareMonad.Hare f a)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (GHC.Base.String, a)
+                   @ a
+                   (Data.Tuple.snd @ GHC.Base.String @ a)
+                   (a1 `cast` (HareMonad.N:Hare[0] <f>_R <a>_N) s)) -}
+21f798729562d8bf5e61dbb42541639f
+  readCharacter ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    HareMonad.Hare f GHC.Types.Char
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(A,1*C1(U),A,A,A),1*U,A,A,A)><L,A><S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.readCharacter1
+                  `cast`
+                (forall (f :: <* -> *>_N).
+                 <GHC.Base.Alternative f>_R
+                 ->_R <GHC.Base.Monad f>_R
+                 ->_R Sym (HareMonad.N:Hare[0] <f>_R <GHC.Types.Char>_N)) -}
+87099641cd3fa2e370110a5b574afeba
+  readCharacter1 ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    GHC.Base.String -> f (GHC.Base.String, GHC.Types.Char)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U(1*U(A,1*C1(U),A,A,A),1*U,A,A,A)><L,A><S,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (f :: * -> *)
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   ($dMonad :: GHC.Base.Monad f)
+                   (eta :: GHC.Base.String) ->
+                 case eta of wild {
+                   []
+                   -> GHC.Base.empty
+                        @ f
+                        $dAlternative
+                        @ (GHC.Base.String, GHC.Types.Char)
+                   : x xs
+                   -> GHC.Base.pure
+                        @ f
+                        (GHC.Base.$p1Alternative @ f $dAlternative)
+                        @ ([GHC.Types.Char], GHC.Types.Char)
+                        (xs, x) }) -}
+f17c8e01ca531ef6e7cd74469ee65fbc
+  runHare ::
+    HareMonad.Hare f a -> GHC.Base.String -> f (GHC.Base.String, a)
+  RecSel Left HareMonad.Hare
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                HareMonad.runHare1
+                  `cast`
+                (forall (f :: <* -> *>_N) (a :: <*>_N).
+                 <HareMonad.Hare f a>_R ->_R HareMonad.N:Hare[0] <f>_R <a>_N) -}
+e402828c31b905ee56b8ca6039e11c9b
+  runHare1 :: HareMonad.Hare f a -> HareMonad.Hare f a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ (f :: * -> *) @ a (ds :: HareMonad.Hare f a) -> ds) -}
+instance [safe] GHC.Base.Alternative [HareMonad.Hare]
+  = HareMonad.$fAlternativeHare
+instance [safe] GHC.Base.Applicative [HareMonad.Hare]
+  = HareMonad.$fApplicativeHare
+instance [safe] GHC.Base.Functor [HareMonad.Hare]
+  = HareMonad.$fFunctorHare
+instance [safe] GHC.Base.Monad [HareMonad.Hare]
+  = HareMonad.$fMonadHare
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

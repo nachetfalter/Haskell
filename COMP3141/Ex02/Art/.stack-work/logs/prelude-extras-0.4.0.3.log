@@ -1,0 +1,6 @@
+Configuring prelude-extras-0.4.0.3...
+Preprocessing library for prelude-extras-0.4.0.3..
+Building library for prelude-extras-0.4.0.3..
+[1 of 1] Compiling Prelude.Extras   ( src\Prelude\Extras.hs, .stack-work\dist\5c8418a7\build\Prelude\Extras.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\prelude-extras-0.4.0.3-2BTovQep0HPEQRrUv78ItR
+Registering library for prelude-extras-0.4.0.3..

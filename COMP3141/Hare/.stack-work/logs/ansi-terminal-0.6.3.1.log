@@ -1,0 +1,32 @@
+Configuring ansi-terminal-0.6.3.1...
+Building ansi-terminal-0.6.3.1...
+Preprocessing library ansi-terminal-0.6.3.1...
+[1 of 9] Compiling System.Console.ANSI.Windows.Foreign ( System\Console\ANSI\Windows\Foreign.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Foreign.o )
+
+System\Console\ANSI\Windows\Foreign.hs:68:1: warning: [-Wunused-imports]
+    The import of `Data.Typeable' is redundant
+      except perhaps to import instances from `Data.Typeable'
+    To import instances alone, use: import Data.Typeable()
+[2 of 9] Compiling System.Console.ANSI.Windows.Detect ( System\Console\ANSI\Windows\Detect.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Detect.o )
+[3 of 9] Compiling System.Console.ANSI.Types ( System\Console\ANSI\Types.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Types.o )
+[4 of 9] Compiling System.Console.ANSI.Windows.Emulator.Codes ( System\Console\ANSI\Windows\Emulator\Codes.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Emulator\Codes.o )
+[5 of 9] Compiling System.Console.ANSI.Codes ( System\Console\ANSI\Codes.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Codes.o )
+[6 of 9] Compiling System.Console.ANSI.Unix ( System\Console\ANSI\Unix.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Unix.o )
+[7 of 9] Compiling System.Console.ANSI.Windows.Emulator ( System\Console\ANSI\Windows\Emulator.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows\Emulator.o )
+
+System\Console\ANSI\Windows\Emulator.hs:82:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type `DWORD'
+    Suppress this warning by saying
+      `_ <- fillConsoleOutputCharacter
+              handle clearChar fill_length fill_cursor_pos'
+
+System\Console\ANSI\Windows\Emulator.hs:83:5: warning: [-Wunused-do-bind]
+    A do-notation statement discarded a result of type `DWORD'
+    Suppress this warning by saying
+      `_ <- fillConsoleOutputAttribute
+              handle clearAttribute fill_length fill_cursor_pos'
+[8 of 9] Compiling System.Console.ANSI.Windows ( System\Console\ANSI\Windows.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI\Windows.o )
+[9 of 9] Compiling System.Console.ANSI ( System\Console\ANSI.hs, .stack-work\dist\ca59d0ab\build\System\Console\ANSI.o )
+Installing library in
+C:\sr\snapshots\518da490\lib\x86_64-windows-ghc-8.0.2\ansi-terminal-0.6.3.1-CdiTOvx5ZEQ2RerUYIP05k
+Registering ansi-terminal-0.6.3.1...

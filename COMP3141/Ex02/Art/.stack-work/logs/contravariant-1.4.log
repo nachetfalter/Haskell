@@ -1,0 +1,9 @@
+Configuring contravariant-1.4...
+Preprocessing library for contravariant-1.4..
+Building library for contravariant-1.4..
+[1 of 4] Compiling Data.Functor.Contravariant ( src\Data\Functor\Contravariant.hs, .stack-work\dist\5c8418a7\build\Data\Functor\Contravariant.o )
+[2 of 4] Compiling Data.Functor.Contravariant.Divisible ( src\Data\Functor\Contravariant\Divisible.hs, .stack-work\dist\5c8418a7\build\Data\Functor\Contravariant\Divisible.o )
+[3 of 4] Compiling Data.Functor.Contravariant.Compose ( src\Data\Functor\Contravariant\Compose.hs, .stack-work\dist\5c8418a7\build\Data\Functor\Contravariant\Compose.o )
+[4 of 4] Compiling Data.Functor.Contravariant.Generic ( src\Data\Functor\Contravariant\Generic.hs, .stack-work\dist\5c8418a7\build\Data\Functor\Contravariant\Generic.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\contravariant-1.4-7IfrnOnBYsL8onpeYgvmpg
+Registering library for contravariant-1.4..

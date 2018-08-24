@@ -1,0 +1,2602 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-23 09:19:14.3044657 UTC
+
+interface main@main:Tests.Examples 8002
+  interface hash: e0a5c1d88af28366c9fc7cf1c7482e6c
+  ABI hash: 1959bacdce4ec15e1a27bb7d49bdcd26
+  export-list hash: 21a2ef3224040411cb295e80dd311a64
+  orphan hash: 1d2566e2d40eea7ddc8380e0934a7df0
+  flag hash: 7f906df0694b3dd979a2e40bc77da8b5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.Examples.test_action_ex_1
+  Tests.Examples.test_action_ex_2
+  Tests.Examples.test_action_ex_3
+  Tests.Examples.test_choose_ex_1
+  Tests.Examples.test_choose_ex_2
+  Tests.Examples.test_cons_ex_1
+  Tests.Examples.test_cons_ex_2
+  Tests.Examples.test_option_ex_1
+  Tests.Examples.test_option_ex_2
+  Tests.Examples.test_plus_ex_1
+  Tests.Examples.test_plus_ex_2
+  Tests.Examples.test_rptRange_ex_1
+  Tests.Examples.test_rptRange_ex_2
+  Tests.Examples.test_rpt_ex_1
+  Tests.Examples.test_rpt_ex_2
+  Tests.Examples.test_string_ex_1
+  Tests.Examples.test_string_ex_2
+module dependencies: Hare HareMonad Tests.Support
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-CdiTOvx5ZEQ2RerUYIP05k
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-KaeMs0wRg3QC5nOlh5MJx3
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-HJkbllVKjCvKRUvctswKnJ
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      process-1.4.3.0@process-1.4.3.0
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo
+                      tasty-hunit-0.9.2@tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unbounded-delays-0.1.1.0@unbounded-delays-0.1.1.0-8pvOsE97fmS7WDAN5vUbqX
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.String
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo:Test.Tasty.Core
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:Data.Char c49b58282af11503cc838e1052cf6b83
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Unicode 7b64ed854a326c2c5bb224f237ed4a0b
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  Hare 0a1b6055753b6aa48fa68f07bfde563a
+  exports: 3f0d67ee01e33a7610568b1d92b67a2e
+  =~ 21e939df0b12983dbc3f0263d7005f1d
+  Action 4388decac9780b950aa2cde5c74aa9ef
+  Char e398ed7ae80d873cc0ab855976960f98
+  Empty dcbc5fe7c00b84aec286fcdf1ad29000
+  Seq 7cadc1bd046c61aeb71552ed8bd31603
+  Star 577d5433495ac7fc97fe684cde829ba7
+  choose a1e6916c795090c0491fc485d2f2bd5e
+  cons 10725a67e859b58d6e7a24cc50cb2341
+  option b2371a16466f1773e5cc6a83da0a20a3
+  plus 95949bbc60f0d1272ff13b05f9273baa
+  rpt a52d5c74b5bc00ac8c69931d717ee32e
+  rptRange b3d5b6d2a42a31691922df5115ee78f7
+  string 2c119340b74b059fcf8b770a6831df64
+import  -/  Tests.Support 11dd8db90448cf5201a9837324e999cd
+  exports: 350e8962748594e0c309615057b5b13a
+  assertEq 524423a2092d3012bd7f43aee4fd9263
+import  -/  tasty-hunit-0.9.2@tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw:Test.Tasty.HUnit e88b14d1e9e15d8b9e25b31d42985512
+dfd045f255d334282110d253f8942019
+  $s$fEq(,) :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar) -}
+7f7f5ffa8166f0ccc702d5d389b72dde
+  $s$fEq(,)1 :: GHC.Classes.Eq ([GHC.Types.Char], [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([GHC.Types.Char], [GHC.Types.Char])
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ [GHC.Types.Char]
+                     @ [GHC.Types.Char]
+                     GHC.Classes.$fEq[]_$s$fEq[]1
+                     GHC.Classes.$fEq[]_$s$fEq[]1)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ [GHC.Types.Char]
+                     @ [GHC.Types.Char]
+                     GHC.Classes.$fEq[]_$s$fEq[]1
+                     GHC.Classes.$fEq[]_$s$fEq[]1) -}
+e2f2081fc6bb8c662fd92d98bb5377de
+  $s$fEqMaybe :: GHC.Classes.Eq (GHC.Base.Maybe GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe GHC.Types.Char)
+                  Tests.Examples.$s$fEqMaybe_$s$fEqMaybe_$c==
+                  (GHC.Base.$fEqMaybe_$c/= @ GHC.Types.Char GHC.Classes.$fEqChar) -}
+26312fc538c7e86fc93030af7772e43d
+  $s$fEqMaybe1 :: GHC.Classes.Eq (GHC.Base.Maybe [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Types.Char])
+                  Tests.Examples.$s$fEqMaybe_$s$fEqMaybe_$c==1
+                  (GHC.Base.$fEqMaybe_$c/=
+                     @ [GHC.Types.Char]
+                     GHC.Classes.$fEq[]_$s$fEq[]1) -}
+97185673f19689a55a74b7047ac9d49a
+  $s$fEqMaybe_$s$fEqMaybe_$c== ::
+    GHC.Base.Maybe GHC.Types.Char
+    -> GHC.Base.Maybe GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Base.Maybe GHC.Types.Char)
+                   (ds1 :: GHC.Base.Maybe GHC.Types.Char) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1 -> GHC.Classes.eqChar a1 b1 } }) -}
+b668742be70e91631f79715bd73962d8
+  $s$fEqMaybe_$s$fEqMaybe_$c==1 ::
+    GHC.Base.Maybe [GHC.Types.Char]
+    -> GHC.Base.Maybe [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Base.Maybe [GHC.Types.Char])
+                   (ds1 :: GHC.Base.Maybe [GHC.Types.Char]) ->
+                 case ds of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just a1
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1 -> GHC.Base.eqString a1 b1 } }) -}
+e151c7526825c2752cd45f015a424ec4
+  $s$fEq[] :: GHC.Classes.Eq [(GHC.Types.Char, GHC.Types.Char)]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(GHC.Types.Char, GHC.Types.Char)]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ (GHC.Types.Char, GHC.Types.Char)
+                     Tests.Examples.$s$fEq[]_$dEq)
+                  Tests.Examples.$s$fEq[]_$s$fEq[]_$c/= -}
+70afc09088e7483474a5cf459c76aa63
+  $s$fEq[]1 :: GHC.Classes.Eq [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[(GHC.Types.Char, GHC.Types.Char)]]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ [(GHC.Types.Char, GHC.Types.Char)]
+                     Tests.Examples.$s$fEq[]_$dEq1)
+                  Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=1 -}
+1bc228be0356a5a0266d5c364489913f
+  $s$fEq[]2 :: GHC.Classes.Eq [GHC.Base.Maybe GHC.Types.Char]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Base.Maybe GHC.Types.Char]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ (GHC.Base.Maybe GHC.Types.Char)
+                     Tests.Examples.$s$fEq[]_$dEq2)
+                  Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=2 -}
+e71ff10c87186ec795d1a78c59a8939c
+  $s$fEq[]3 :: GHC.Classes.Eq [(GHC.Base.String, [GHC.Types.Char])]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(GHC.Base.String, [GHC.Types.Char])]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ (GHC.Base.String, [GHC.Types.Char])
+                     Tests.Examples.$s$fEq[]_$dEq3)
+                  Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=3 -}
+249a06d7611896923aae41611a80063d
+  $s$fEq[]4 :: GHC.Classes.Eq [GHC.Types.Bool]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Types.Bool]
+                  (GHC.Classes.$fEq[]_$c== @ GHC.Types.Bool GHC.Classes.$fEqBool)
+                  Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=4 -}
+aca7e1b3190892280d3490e7df3eaf88
+  $s$fEq[]_$dEq :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Char)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Tests.Examples.$s$fEq(,) -}
+75ad83be859f383e4be0fc3da3245bfa
+  $s$fEq[]_$dEq1 :: GHC.Classes.Eq [(GHC.Types.Char, GHC.Types.Char)]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Tests.Examples.$s$fEq[] -}
+7b9f68dc32d0620405977e0a06261d1b
+  $s$fEq[]_$dEq2 :: GHC.Classes.Eq (GHC.Base.Maybe GHC.Types.Char)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Tests.Examples.$s$fEqMaybe -}
+6ade7da39d7561f3964878f1f473c7bf
+  $s$fEq[]_$dEq3 ::
+    GHC.Classes.Eq (GHC.Base.String, [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Tests.Examples.$s$fEq(,)1 -}
+8e4315a7427910e04e55c44396e460ea
+  $s$fEq[]_$s$fEq[]_$c/= ::
+    [(GHC.Types.Char, GHC.Types.Char)]
+    -> [(GHC.Types.Char, GHC.Types.Char)] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [(GHC.Types.Char, GHC.Types.Char)])
+                   (y :: [(GHC.Types.Char, GHC.Types.Char)]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ (GHC.Types.Char, GHC.Types.Char)
+                      Tests.Examples.$s$fEq[]_$dEq
+                      x
+                      y)) -}
+d60f95d7e43d817a31d07bb6ca89edd6
+  $s$fEq[]_$s$fEq[]_$c/=1 ::
+    [[(GHC.Types.Char, GHC.Types.Char)]]
+    -> [[(GHC.Types.Char, GHC.Types.Char)]] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [[(GHC.Types.Char, GHC.Types.Char)]])
+                   (y :: [[(GHC.Types.Char, GHC.Types.Char)]]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ [(GHC.Types.Char, GHC.Types.Char)]
+                      Tests.Examples.$s$fEq[]_$dEq1
+                      x
+                      y)) -}
+0457c16b5ce540aaa5ecad6ed8f71631
+  $s$fEq[]_$s$fEq[]_$c/=2 ::
+    [GHC.Base.Maybe GHC.Types.Char]
+    -> [GHC.Base.Maybe GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Base.Maybe GHC.Types.Char])
+                   (y :: [GHC.Base.Maybe GHC.Types.Char]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ (GHC.Base.Maybe GHC.Types.Char)
+                      Tests.Examples.$s$fEq[]_$dEq2
+                      x
+                      y)) -}
+1387f384d61fe1ba22b6622ed38e15d3
+  $s$fEq[]_$s$fEq[]_$c/=3 ::
+    [(GHC.Base.String, [GHC.Types.Char])]
+    -> [(GHC.Base.String, [GHC.Types.Char])] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [(GHC.Base.String, [GHC.Types.Char])])
+                   (y :: [(GHC.Base.String, [GHC.Types.Char])]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ (GHC.Base.String, [GHC.Types.Char])
+                      Tests.Examples.$s$fEq[]_$dEq3
+                      x
+                      y)) -}
+7a970621feb2682dfecd755edacdc694
+  $s$fEq[]_$s$fEq[]_$c/=4 ::
+    [GHC.Types.Bool] -> [GHC.Types.Bool] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Types.Bool]) (y :: [GHC.Types.Bool]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ GHC.Types.Bool
+                      GHC.Classes.$fEqBool
+                      x
+                      y)) -}
+081dc40877ccdd6faa7ef4c3586a9b1f
+  $s$fShow(,)_$s$fShow(,)_$cshowList ::
+    [(GHC.Types.Char, GHC.Types.Char)] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [(GHC.Types.Char, GHC.Types.Char)])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ GHC.Types.Char
+                      @ GHC.Types.Char
+                      GHC.Show.$fShowChar
+                      GHC.Show.$fShowChar
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+37bdc0df6d8cb3a60ab36bdaa61f1b18
+  $s$fShow(,)_$s$fShow(,)_$cshowList1 ::
+    [([GHC.Types.Char], [GHC.Types.Char])] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [([GHC.Types.Char], [GHC.Types.Char])])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ [GHC.Types.Char]
+                      @ [GHC.Types.Char]
+                      GHC.Show.$fShow[]_$s$fShow[]1
+                      GHC.Show.$fShow[]_$s$fShow[]1
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+0ac6f314f2b54719caade729b2339659
+  $s$fShowMaybe1 :: GHC.Show.Show (GHC.Base.Maybe [GHC.Types.Char])
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Base.Maybe [GHC.Types.Char])
+                  (GHC.Show.$fShowMaybe_$cshowsPrec
+                     @ [GHC.Types.Char]
+                     GHC.Show.$fShow[]_$s$fShow[]1)
+                  (GHC.Show.$fShowMaybe_$cshow
+                     @ [GHC.Types.Char]
+                     GHC.Show.$fShow[]_$s$fShow[]1)
+                  Tests.Examples.$s$fShowMaybe_$s$fShowMaybe_$cshowList1 -}
+2192f4d91407bf75682ea2665a3a7478
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList ::
+    [GHC.Base.Maybe GHC.Types.Char] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe GHC.Types.Char])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ GHC.Types.Char
+                      GHC.Show.$fShowChar
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+8ca00a8f04dc23cf91e6eb08088d18f5
+  $s$fShowMaybe_$s$fShowMaybe_$cshowList1 ::
+    [GHC.Base.Maybe [GHC.Types.Char]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [GHC.Base.Maybe [GHC.Types.Char]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe [GHC.Types.Char])
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ [GHC.Types.Char]
+                      GHC.Show.$fShow[]_$s$fShow[]1
+                      GHC.Show.shows22)
+                   eta
+                   eta1) -}
+b8eeb6774fccd70ad52916211d36f619
+  $s$fShow[]1 ::
+    [[(GHC.Types.Char, GHC.Types.Char)]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[(GHC.Types.Char, GHC.Types.Char)]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList
+                   eta
+                   eta1) -}
+43afd1beeb4ba09954907d0edd98a6d4
+  $s$fShow[]10 ::
+    GHC.Types.Int -> [GHC.Base.Maybe GHC.Types.Char] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Base.Maybe GHC.Types.Char])
+                   (eta1 :: GHC.Base.String) ->
+                 Tests.Examples.$s$fShowMaybe_$s$fShowMaybe_$cshowList eta eta1) -}
+008a2e6ef287af908fd2e3534bc05921
+  $s$fShow[]11 :: GHC.Show.Show [(GHC.Base.String, [GHC.Types.Char])]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [(GHC.Base.String, [GHC.Types.Char])]
+                  Tests.Examples.$s$fShow[]15
+                  Tests.Examples.$s$fShow[]13
+                  Tests.Examples.$s$fShow[]12 -}
+8cbc8e65c53b7c20b034e83b3dc9818a
+  $s$fShow[]12 ::
+    [[(GHC.Base.String, [GHC.Types.Char])]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[(GHC.Base.String, [GHC.Types.Char])]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [(GHC.Base.String, [GHC.Types.Char])]
+                   Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList1
+                   eta
+                   eta1) -}
+f790786e6415ad5cd8fe7dd96d6b78b7
+  $s$fShow[]13 ::
+    [(GHC.Base.String, [GHC.Types.Char])] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [(GHC.Base.String, [GHC.Types.Char])]) ->
+                 GHC.Show.showList__
+                   @ ([GHC.Types.Char], [GHC.Types.Char])
+                   Tests.Examples.$s$fShow[]14
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+22614d9425a1e2ce5d4f75c6912fdced
+  $s$fShow[]14 ::
+    ([GHC.Types.Char], [GHC.Types.Char])
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w3 :: ([GHC.Types.Char], [GHC.Types.Char]))
+                   (w4 :: GHC.Base.String)[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows7
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      GHC.Show.shows6
+                      (GHC.Show.showLitString
+                         ww1
+                         (GHC.Types.:
+                            @ GHC.Types.Char
+                            GHC.Show.shows6
+                            (GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.shows5
+                               (GHC.Show.$fShow(,)_$sgo
+                                  (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w4)
+                                  (\ (eta1 :: GHC.Base.String) ->
+                                   GHC.Show.shows_$cshowList1 ww2 eta1)
+                                  (GHC.Types.[] @ GHC.Show.ShowS)))))) }) -}
+ebe71636652bf10865fdf103221dd089
+  $s$fShow[]15 ::
+    GHC.Types.Int
+    -> [(GHC.Base.String, [GHC.Types.Char])] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [([GHC.Types.Char], [GHC.Types.Char])])
+                   (eta1 :: GHC.Base.String) ->
+                 Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList1 eta eta1) -}
+98bbe0807afa4cad7d9e7238bd7144fc
+  $s$fShow[]16 :: GHC.Show.Show [GHC.Types.Bool]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Types.Bool]
+                  Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowsPrec1
+                  Tests.Examples.$s$fShow[]_$s$fShow[]_$cshow
+                  Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowList1 -}
+c836933a93cd4e5aedaffd5f753c95e4
+  $s$fShow[]5 :: GHC.Show.Show [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[(GHC.Types.Char, GHC.Types.Char)]]
+                  Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  Tests.Examples.$s$fShow[]6
+                  Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowList -}
+9c1478391179bb12f0d94a6aa53268c5
+  $s$fShow[]6 ::
+    [[(GHC.Types.Char, GHC.Types.Char)]] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [[(GHC.Types.Char, GHC.Types.Char)]]) ->
+                 GHC.Show.showList__
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+1e0400d9a886dc9db82da12d769107c3
+  $s$fShow[]7 :: GHC.Show.Show [GHC.Base.Maybe GHC.Types.Char]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Base.Maybe GHC.Types.Char]
+                  Tests.Examples.$s$fShow[]10
+                  Tests.Examples.$s$fShow[]9
+                  Tests.Examples.$s$fShow[]8 -}
+9ab4a7b839be7be1881cadd243655ac6
+  $s$fShow[]8 :: [[GHC.Base.Maybe GHC.Types.Char]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Base.Maybe GHC.Types.Char]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Base.Maybe GHC.Types.Char]
+                   Tests.Examples.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+                   eta
+                   eta1) -}
+199a2c786e003d72680cfa2772b342b4
+  $s$fShow[]9 :: [GHC.Base.Maybe GHC.Types.Char] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Base.Maybe GHC.Types.Char]) ->
+                 GHC.Show.showList__
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Show.$fShowMaybe_$cshowsPrec
+                      @ GHC.Types.Char
+                      GHC.Show.$fShowChar
+                      GHC.Show.shows22)
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b28fd5d99098dda8e5d289d2db85e83f
+  $s$fShow[]_$s$fShow[]_$cshow :: [GHC.Types.Bool] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Types.Bool]) ->
+                 GHC.Show.$fShowBool_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+649a5e46340e166358cbdb9de624751a
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[[(GHC.Types.Char, GHC.Types.Char)]]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[[(GHC.Types.Char, GHC.Types.Char)]]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [[(GHC.Types.Char, GHC.Types.Char)]]
+                   Tests.Examples.$s$fShow[]1
+                   eta
+                   eta1) -}
+767db4c270810925a5c0726466d5d9b8
+  $s$fShow[]_$s$fShow[]_$cshowList1 ::
+    [[GHC.Types.Bool]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Types.Bool]]) (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Types.Bool]
+                   GHC.Show.$fShowBool_$cshowList
+                   eta
+                   eta1) -}
+d0ce57aafa5a72f3735d328cd6e8b575
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int
+    -> [[(GHC.Types.Char, GHC.Types.Char)]] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [[(GHC.Types.Char, GHC.Types.Char)]])
+                   (eta1 :: GHC.Base.String) ->
+                 Tests.Examples.$s$fShow[]1 eta eta1) -}
+5b7c759e18e115e2c3077a45bb52baf1
+  $s$fShow[]_$s$fShow[]_$cshowsPrec1 ::
+    GHC.Types.Int -> [GHC.Types.Bool] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Types.Bool])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShowBool_$cshowList eta eta1) -}
+111b9fae442f32a26ff3b5ee9c561f42
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tests.Examples.$trModule2
+                   Tests.Examples.$trModule1) -}
+f7a4852a700549bc1296c65896778489
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tests.Examples"#) -}
+1f6c1487eaf52acbb034688734593ad6
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+e5b7cf6754903b8d2256f5e5732f09b4
+  test_action_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_action_ex_27
+                   Tests.Examples.test_action_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+525ec4553d82804151e7446e6b84a2c4
+  test_action_ex_10 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_action_ex_11) -}
+f42428d11933fb147f2a2c817654938f
+  test_action_ex_11 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_action_ex_12
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ec3ea7b056bb2d973ceefe6cccb0cd48
+  test_action_ex_12 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '*'#) -}
+803dbd42b28273e50ea653cea3af66a0
+  test_action_ex_13 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_26
+                   Tests.Examples.test_action_ex_14) -}
+2535b95ee803184ca5946b88491e5f7f
+  test_action_ex_14 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_25
+                   Tests.Examples.test_action_ex_15) -}
+d31fccfefd3ea15493a57b45d3db7251
+  test_action_ex_15 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_24
+                   Tests.Examples.test_action_ex_16) -}
+6bf50c244b23be17f2dc0555c9ea458d
+  test_action_ex_16 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_23
+                   Tests.Examples.test_action_ex_17) -}
+8bdeeb4c398b1e53b6e6fa60fc50dab4
+  test_action_ex_17 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_25
+                   Tests.Examples.test_action_ex_18) -}
+72461c0806aa99f09c758fa0657241c4
+  test_action_ex_18 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_24
+                   Tests.Examples.test_action_ex_19) -}
+05bad6083eaf596edbfbc5ec3bf3ba68
+  test_action_ex_19 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_23
+                   Tests.Examples.test_action_ex_20) -}
+56aa96de17290cda40099f1adf6d154d
+  test_action_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_action_ex_40
+                   Tests.Examples.test_action_ex_28
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+85cf4a62e112e6f0d84cf2ac554af260
+  test_action_ex_20 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_24
+                   Tests.Examples.test_action_ex_21) -}
+84284461edda321aaa04eaa9b4691ed1
+  test_action_ex_21 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_23
+                   Tests.Examples.test_action_ex_22) -}
+cf718f6736a2b6ee96aea0478c7e582e
+  test_action_ex_22 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Tests.Examples.test_action_ex_23
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+a2819ff06df4077707c95e2c1999f4a2
+  test_action_ex_23 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+38ea65065e2ab8615d96c7b266cbfd66
+  test_action_ex_24 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+b6579dfdfeda090820252be4a6d89212
+  test_action_ex_25 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2#) -}
+8c491d3f3e2abb0cf4ae990a8b752e24
+  test_action_ex_26 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+46cbb9e00caa8d90609080859ae98d90
+  test_action_ex_27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "action example 1"#) -}
+6a9a0ab5a8fe35210454d5341089b441
+  test_action_ex_28 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Types.Bool]
+                        Tests.Examples.$s$fEq[]4
+                        Tests.Examples.$s$fShow[]16
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_action_ex_38
+                        Tests.Examples.test_action_ex_29
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+6f6052db22f23617df896aa67bde1a7e
+  test_action_ex_29 :: [GHC.Types.Bool]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, GHC.Types.Bool)
+                   @ GHC.Types.Bool
+                   (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Bool)
+                   Tests.Examples.test_action_ex_30) -}
+cd8e6ba5a59979f25c58f1f2df6816ba
+  test_action_ex_3 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_action_ex_53
+                   Tests.Examples.test_action_ex_41
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+5dfb950b970aabdb98c4fff8dd93f4d8
+  test_action_ex_30 :: [(GHC.Base.String, GHC.Types.Bool)]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ GHC.Types.Bool
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_action_ex_32)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Bool>_N)
+                   Tests.Examples.test_action_ex_31) -}
+65e1fd78e498f9d9840c23a4d4504e7c
+  test_action_ex_31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "AXax"#) -}
+01df604466ecfb675c4c81a34e38e9d3
+  test_action_ex_32 :: Hare.RE GHC.Types.Bool
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ GHC.Types.Bool
+                   @ GHC.Types.Char
+                   GHC.Unicode.isUpper
+                   Tests.Examples.test_action_ex_33) -}
+f1be36a74ff6b4b54ccd1273d0f91f0b
+  test_action_ex_33 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_action_ex_34) -}
+35aeea161358bf5488f8c2a1baedb921
+  test_action_ex_34 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_action_ex_37
+                   Tests.Examples.test_action_ex_35) -}
+9b25871321f848ae20aa71913dd42018
+  test_action_ex_35 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_action_ex_36
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+895537c538ed24082f40e0378637d54b
+  test_action_ex_36 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'A'#) -}
+406bf495ba6d34db08c46505bb1eea68
+  test_action_ex_37 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'a'#) -}
+68e37a19564e320916a4ecdab99d9d4a
+  test_action_ex_38 :: [GHC.Types.Bool]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   GHC.Types.True
+                   Tests.Examples.test_action_ex_39) -}
+8a979b5c1062c91783b5a6077c151789
+  test_action_ex_39 :: [GHC.Types.Bool]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Bool
+                   GHC.Types.False
+                   (GHC.Types.[] @ GHC.Types.Bool)) -}
+b99850f3506478ab819062bb2bf6f993
+  test_action_ex_3_atoz :: Hare.RE GHC.Types.Char
+  {- Strictness: m3,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_action_ex_47) -}
+92e7118ea50d34083a02413d361928fc
+  test_action_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Types.Int]
+                        GHC.Classes.$fEq[]_$s$fEq[]
+                        GHC.Show.$fShow[]_$s$fShow[]
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_action_ex_13
+                        Tests.Examples.test_action_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+71a4fa44bbfa2afa72680ef13fd84572
+  test_action_ex_40 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "action example 2"#) -}
+019e55e3608944f1a89d64fb682d09d2
+  test_action_ex_41 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_action_ex_49
+                        Tests.Examples.test_action_ex_42
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+f67dfe80a7a73810e286a8aaf58d3fa6
+  test_action_ex_42 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_action_ex_43) -}
+1d2d63b0aad3c7ade684fae93f415fe1
+  test_action_ex_43 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_action_ex_45)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_action_ex_44) -}
+4724da8eea820826877684885f896ff0
+  test_action_ex_44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ab01cd20"#) -}
+5a9c3f75062db1822b49c9265595e4b2
+  test_action_ex_45 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.Examples.test_action_ex_48
+                   Tests.Examples.test_action_ex_46) -}
+7b7d6cfcdf909a76d950745446ba68c3
+  test_action_ex_46 :: Hare.RE (GHC.Types.Char, GHC.Types.Char)
+  {- Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                   Tests.Examples.test_action_ex_3_atoz
+                   Tests.Examples.test_action_ex_3_atoz) -}
+d114259228035bff457d8402c2af860e
+  test_action_ex_47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 122#) -}
+0b27d5384313bcaeea05b977e0721862
+  test_action_ex_48 ::
+    (GHC.Types.Char, GHC.Types.Char) -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (ds :: (GHC.Types.Char, GHC.Types.Char)) ->
+                 case ds of wild { (,) x y ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   x
+                   (GHC.Types.:
+                      @ GHC.Types.Char
+                      y
+                      (GHC.Types.[] @ GHC.Types.Char)) }) -}
+1d784fff35d481b00ec2bcb5673280b5
+  test_action_ex_49 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_action_ex_52
+                   Tests.Examples.test_action_ex_50) -}
+39305fcf321dde3f454aca39aac41709
+  test_action_ex_5 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, GHC.Types.Int)
+                   @ GHC.Types.Int
+                   (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Int)
+                   Tests.Examples.test_action_ex_6) -}
+2c6c6336a5e9615d5b62dae18a74c60b
+  test_action_ex_50 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_action_ex_51
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+ac73e4658fef6ba05282fe85b690e308
+  test_action_ex_51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cd"#) -}
+17ae6745cbce523ed94f648af1e763d1
+  test_action_ex_52 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ab"#) -}
+99e57d62b38ff6e236ba5d517dae4796
+  test_action_ex_53 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "action example 3"#) -}
+829d21d446b4b5498622d30385812835
+  test_action_ex_6 :: [(GHC.Base.String, GHC.Types.Int)]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ GHC.Types.Int
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_action_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Int>_N)
+                   Tests.Examples.test_action_ex_7) -}
+2cadb3f020d8d52c9655914d3b565b58
+  test_action_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "***"#) -}
+b4666c7defaab1402490d28feb313d2b
+  test_action_ex_8 :: Hare.RE GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ GHC.Types.Int
+                   @ [GHC.Types.Char]
+                   (GHC.List.length @ GHC.Types.Char)
+                   Tests.Examples.test_action_ex_9) -}
+f542ab28eeceda0f0e07d42f1c433948
+  test_action_ex_9 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Star
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Char
+                   @~ <[GHC.Types.Char]>_N
+                   Tests.Examples.test_action_ex_10) -}
+c0cf96bd16ea55b47631e72052db3b25
+  test_choose_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_choose_ex_22
+                   Tests.Examples.test_choose_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+da0614fef190cdb27bf630dcbc0cc6fa
+  test_choose_ex_10 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_14
+                   Tests.Examples.test_choose_ex_11) -}
+550965c9de064e3b4a2adde7da9c59f6
+  test_choose_ex_11 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_12
+                   (GHC.Types.[] @ (Hare.RE GHC.Base.String))) -}
+c2ed1b65fcc75f0c071d2d17722353f3
+  test_choose_ex_12 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.string Tests.Examples.test_choose_ex_13) -}
+6972a9c3c2a224d73cf1d24799c08234
+  test_choose_ex_13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "PHYS"#) -}
+c7ce66fe9b2734d5877a1b80ceb27fbd
+  test_choose_ex_14 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.string Tests.Examples.test_choose_ex_15) -}
+80c500bce6e77d5a860257d4ee3e2afc
+  test_choose_ex_15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "MATH"#) -}
+d937caf67d845eeac1f2b64022a68203
+  test_choose_ex_16 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.string Tests.Examples.test_choose_ex_17) -}
+4ab7e6b8786a6021bbbdfdd924ab1e1c
+  test_choose_ex_17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "COMP"#) -}
+c1085a5ce83576b51a6c5b4b4b85822f
+  test_choose_ex_18 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.Examples.test_choose_ex_17
+                   Tests.Examples.test_choose_ex_19) -}
+b907325a56349701d3c925e0c4382044
+  test_choose_ex_19 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.Examples.test_choose_ex_15
+                   Tests.Examples.test_choose_ex_20) -}
+a6fc870594e354be3a644dba5a399fd8
+  test_choose_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_choose_ex_27
+                   Tests.Examples.test_choose_ex_23
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+a79e4e3ba16e83a6383f86c102a83f29
+  test_choose_ex_20 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.Examples.test_choose_ex_13
+                   Tests.Examples.test_choose_ex_21) -}
+d57b63a92c2ed4b1f44e60573a2469f9
+  test_choose_ex_21 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Tests.Examples.test_choose_ex_17
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+4ff2b5e1e35b261c694d39c7354350c3
+  test_choose_ex_22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "choose example 1"#) -}
+bb389e59a709b08e7d01086698e8b3fe
+  test_choose_ex_23 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        Tests.Examples.$s$fEqMaybe1
+                        Tests.Examples.$s$fShowMaybe1
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ GHC.Base.String)
+                        Tests.Examples.test_choose_ex_24
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+c9bb17f1e89107278c449c02f9d408a6
+  test_choose_ex_24 :: GHC.Base.Maybe GHC.Base.String
+  {- Unfolding: (case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ GHC.Base.String
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         Tests.Examples.test_choose_ex_26)
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Base.String>_N)
+                        Tests.Examples.test_choose_ex_25 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ GHC.Base.String
+                        (Data.Tuple.snd @ GHC.Base.String @ GHC.Base.String x) }) -}
+79974ce5958a1beeb96ff78d8dcc544d
+  test_choose_ex_25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "abc"#) -}
+44e69b17e352dd2e3f6fa11f7244b1b8
+  test_choose_ex_26 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.choose
+                   @ GHC.Base.String
+                   (GHC.Types.[] @ (Hare.RE GHC.Base.String))) -}
+b39e76599da515375181a16a7475e288
+  test_choose_ex_27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "choose example 2"#) -}
+ac074ce036ae1103f5692e8a57d3482b
+  test_choose_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Base.String]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_choose_ex_18
+                        Tests.Examples.test_choose_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+2b57a60a6414fad49036508fcdd5e1f3
+  test_choose_ex_5 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, GHC.Base.String)
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ GHC.Base.String)
+                   Tests.Examples.test_choose_ex_6) -}
+43273a6f58173cc842f05728bcbe67a1
+  test_choose_ex_6 :: [(GHC.Base.String, GHC.Base.String)]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ GHC.Base.String
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_choose_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <GHC.Base.String>_N)
+                   Tests.Examples.test_choose_ex_7) -}
+4723cc4f68a4b3d000eb8fded2170683
+  test_choose_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "COMP3141, MATH1081, PHYS1121, COMP3121"#) -}
+fc12bb7fa24d6f0c4818f0bf107e3b89
+  test_choose_ex_8 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.choose
+                   @ GHC.Base.String
+                   Tests.Examples.test_choose_ex_9) -}
+07dc23a0a306a9b84fdc263cec23fa7e
+  test_choose_ex_9 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_16
+                   Tests.Examples.test_choose_ex_10) -}
+537c1efded589ad3c64b9345624eb14a
+  test_cons_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_cons_ex_24
+                   Tests.Examples.test_cons_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+a219ac04f3cc373024246816323418d3
+  test_cons_ex_10 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Star
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Char
+                   @~ <[GHC.Types.Char]>_N
+                   Tests.Examples.test_cons_ex_1_re) -}
+7090ac807759648193db638fb14b4c5c
+  test_cons_ex_11 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_cons_ex_12
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b4539f09d75a86c55bceafa6802921c7
+  test_cons_ex_12 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '0'#) -}
+1f971c171368f7d67d2e0521a6831a22
+  test_cons_ex_13 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_cons_ex_14) -}
+97b89c08f7d584e24f80898d41f476c4
+  test_cons_ex_14 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_cons_ex_15
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a4559ffef7de9e3bd67233d24d864925
+  test_cons_ex_15 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '1'#) -}
+8d4fea568f3e2c48119718de3f68b8aa
+  test_cons_ex_16 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_22
+                   Tests.Examples.test_cons_ex_17) -}
+881ae60585e50cc3f33a6c737a7de00b
+  test_cons_ex_17 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_21
+                   Tests.Examples.test_cons_ex_18) -}
+17ded99ab72c4805043bf57c94ebcda2
+  test_cons_ex_18 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_23
+                   Tests.Examples.test_cons_ex_19) -}
+34a3d148b177e1e2a8f91db14c01b1eb
+  test_cons_ex_19 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_22
+                   Tests.Examples.test_cons_ex_20) -}
+b5278d50cbde06b287b3e00a577ebf7e
+  test_cons_ex_1_re :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_cons_ex_11) -}
+6ee8f1d4045ffd58d5a99d76a18dd42e
+  test_cons_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_cons_ex_33
+                   Tests.Examples.test_cons_ex_25
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+4c256e6ed3813c652eb6229fa8f47d94
+  test_cons_ex_20 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_21
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+f7a357ab96e5ff91b1cfedc9d38b02c3
+  test_cons_ex_21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1"#) -}
+5840fdd21efe4a1f86e535fd70e729c7
+  test_cons_ex_22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "10"#) -}
+9b7d77dc8fd78c01b8477ebf2cddab41
+  test_cons_ex_23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "100"#) -}
+6383c3bb77510d624ff5ce7237abc53b
+  test_cons_ex_24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cons example 1"#) -}
+f390d5c143e875720302fc450aa3dd61
+  test_cons_ex_25 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_cons_ex_32
+                        Tests.Examples.test_cons_ex_26
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+a6d0033c2b708a145925083b4f4423d8
+  test_cons_ex_26 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_cons_ex_27) -}
+a3e96a59a72f4796d4217b08214fdc64
+  test_cons_ex_27 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_cons_ex_28)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_cons_ex_7) -}
+4131b9d8532a432bf109cf64db7304fb
+  test_cons_ex_28 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   (Hare.cons1 @ GHC.Types.Char)
+                   Tests.Examples.test_cons_ex_29) -}
+dab9dbadff71049f0a88b067000094c0
+  test_cons_ex_29 :: Hare.RE (GHC.Types.Char, [GHC.Types.Char])
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   @ GHC.Types.Char
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Types.Char, [GHC.Types.Char])>_N
+                   Tests.Examples.test_cons_ex_13
+                   Tests.Examples.test_cons_ex_30) -}
+6084d9de0b72414b36b9d2c707451884
+  test_cons_ex_30 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ ()
+                   Tests.Examples.test_cons_ex_31
+                   Hare.$WEmpty) -}
+0a6ef8824d30d3d176db98d10f7ed88f
+  test_cons_ex_31 :: () -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (ds :: ()) -> GHC.Types.[] @ GHC.Types.Char) -}
+14be23080bb2a768d034deb7610adabf
+  test_cons_ex_32 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_cons_ex_21
+                   Tests.Examples.test_cons_ex_20) -}
+4f74846939652f117701d72af257b8dd
+  test_cons_ex_33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "cons example 2"#) -}
+62d8c2f62d0141d652296b00bef926cf
+  test_cons_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_cons_ex_16
+                        Tests.Examples.test_cons_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+68ab271fc48bc569214a94e962338b88
+  test_cons_ex_5 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_cons_ex_6) -}
+060fa385a11e55ae1c27c5bb58c519be
+  test_cons_ex_6 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_cons_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_cons_ex_7) -}
+0e4c2bad864fe6467f471cc116d09e2d
+  test_cons_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "10100"#) -}
+946b18adb0ce8f126e1119df0cad8777
+  test_cons_ex_8 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   (Hare.cons1 @ GHC.Types.Char)
+                   Tests.Examples.test_cons_ex_9) -}
+cf8dce2103bb9a69ae7cfa9a6768f9df
+  test_cons_ex_9 :: Hare.RE (GHC.Types.Char, [GHC.Types.Char])
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   @ GHC.Types.Char
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Types.Char, [GHC.Types.Char])>_N
+                   Tests.Examples.test_cons_ex_13
+                   Tests.Examples.test_cons_ex_10) -}
+5054623fa5de635cba6ddf1144dac8f7
+  test_option_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_option_ex_35
+                   Tests.Examples.test_option_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+f765ba5ee4ce335e8d34f775a4f33733
+  test_option_ex_10 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   (Hare.cons1 @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_11) -}
+496fe24281e6717178b26a252367a990
+  test_option_ex_11 :: Hare.RE (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   @ GHC.Types.Char
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Types.Char, [GHC.Types.Char])>_N
+                   Tests.Examples.test_option_ex_13
+                   Tests.Examples.test_option_ex_12) -}
+2c02db5ea885305d4d7edf6f0438e686
+  test_option_ex_12 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.Star
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Char
+                   @~ <[GHC.Types.Char]>_N
+                   Tests.Examples.test_option_ex_13) -}
+94218db279163aef000ded897e5578e8
+  test_option_ex_13 :: Hare.RE GHC.Types.Char
+  {- Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_option_ex_14) -}
+23a2845bba5075d8d5829d24b203eb68
+  test_option_ex_14 :: GHC.Base.String
+  {- Unfolding: (GHC.Enum.eftChar 48# 57#) -}
+d1b1c6bf5c2b41c927110eb717b5ec40
+  test_option_ex_15 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ GHC.Types.Char
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   Tests.Examples.test_option_ex_21
+                   Tests.Examples.test_option_ex_16) -}
+72a5ed40aff3ae04909ca302e3796522
+  test_option_ex_16 :: Hare.RE (GHC.Base.Maybe GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Choose
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   Tests.Examples.test_option_ex_17
+                   (Hare.option1 @ GHC.Types.Char)) -}
+8ff042b4167d66a8f8cea45a8b6663dc
+  test_option_ex_17 :: Hare.RE (GHC.Base.Maybe GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   @ GHC.Types.Char
+                   (GHC.Base.Just @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_18) -}
+9db46cec50384504b1bbd137b8ebe4ad
+  test_option_ex_18 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_option_ex_19) -}
+d13b107e2a877082148fc78250c31fd0
+  test_option_ex_19 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_option_ex_20
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+00aec3efec34497462d6e67035b360de
+  test_option_ex_1_d :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '+'#) -}
+e237d0ddcd62e203fe06ddabfc9c86c0
+  test_option_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_option_ex_48
+                   Tests.Examples.test_option_ex_36
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+562014db59a1fb9d0f9f224fc7e90a90
+  test_option_ex_20 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '-'#) -}
+c97a27cfdcf54da796ea9b98aa00cc9b
+  test_option_ex_21 ::
+    GHC.Base.Maybe GHC.Types.Char -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (x :: GHC.Base.Maybe GHC.Types.Char) ->
+                 case x of wild {
+                   GHC.Base.Nothing -> Tests.Examples.test_option_ex_1_d
+                   GHC.Base.Just v -> v }) -}
+d1f486f7bfef8e720abbf168f0f9dc4e
+  test_option_ex_22 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_34
+                   Tests.Examples.test_option_ex_23) -}
+3d26141894094045ec187539f14f256c
+  test_option_ex_23 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_33
+                   Tests.Examples.test_option_ex_24) -}
+6db37fc3991b48e55d11bccfed413999
+  test_option_ex_24 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_32
+                   Tests.Examples.test_option_ex_25) -}
+61440f18a5b9b497e917b956717bd953
+  test_option_ex_25 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_29
+                   Tests.Examples.test_option_ex_26) -}
+9aff626dd93cb955dfab9e81ce37a62f
+  test_option_ex_26 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_31
+                   Tests.Examples.test_option_ex_27) -}
+e7b320288daa45bc0b90025e10bdecab
+  test_option_ex_27 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_30
+                   Tests.Examples.test_option_ex_28) -}
+afa1e4f1d8e47c18d16409804b2cad99
+  test_option_ex_28 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_option_ex_29
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+4081e1eed7c59e9cecca786d614fb20f
+  test_option_ex_29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+3"#) -}
+99694e92aa0a48388d088965f2819f33
+  test_option_ex_30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+5"#) -}
+d787b745cac6510e9b484081b9f3c15e
+  test_option_ex_31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+0"#) -}
+7f1e835852f8349061ef556cf5dcccb5
+  test_option_ex_32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+30"#) -}
+8a08cd8f89af4d51a5421383ab0bbbba
+  test_option_ex_33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-3"#) -}
+afdad501d53ef66013cb7e9e23b1d7c0
+  test_option_ex_34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-30"#) -}
+46657acc8882e8ea5dff1ca0d46e9e08
+  test_option_ex_35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "option example 1"#) -}
+d005e271f250db5bd6533819e6841662
+  test_option_ex_36 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [GHC.Base.Maybe GHC.Types.Char]
+                        Tests.Examples.$s$fEq[]2
+                        Tests.Examples.$s$fShow[]7
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_option_ex_44
+                        Tests.Examples.test_option_ex_37
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+1b6ac381a10f59f56e85c0dd760f0401
+  test_option_ex_37 :: [GHC.Base.Maybe GHC.Types.Char]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, GHC.Base.Maybe GHC.Types.Char)
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (Data.Tuple.snd
+                      @ GHC.Base.String
+                      @ (GHC.Base.Maybe GHC.Types.Char))
+                   Tests.Examples.test_option_ex_38) -}
+10bab49bb106aadf1c7610d8ab6e8cdb
+  test_option_ex_38 ::
+    [(GHC.Base.String, GHC.Base.Maybe GHC.Types.Char)]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ (GHC.Base.Maybe GHC.Types.Char)
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_option_ex_40)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <GHC.Base.Maybe GHC.Types.Char>_N)
+                   Tests.Examples.test_option_ex_39) -}
+a80ac9c66f51f69542e517ef7f27a956
+  test_option_ex_39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "foo"#) -}
+b97ea4d3955779e09db2e7d2f5244d9a
+  test_option_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_option_ex_22
+                        Tests.Examples.test_option_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+01db35885e8d33fb274b4ab6fdd0a881
+  test_option_ex_40 :: Hare.RE (GHC.Base.Maybe GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Choose
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   Tests.Examples.test_option_ex_41
+                   (Hare.option1 @ GHC.Types.Char)) -}
+51f296c0be673cdcd391e22601dbfe34
+  test_option_ex_41 :: Hare.RE (GHC.Base.Maybe GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   @ GHC.Types.Char
+                   (GHC.Base.Just @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_42) -}
+0a2e372bcd8d2c05f3d2966a2456353a
+  test_option_ex_42 :: Hare.RE GHC.Types.Char
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Char
+                   @ GHC.Types.Char
+                   @~ <GHC.Types.Char>_N
+                   Tests.Examples.test_option_ex_43) -}
+51027346e50742b2bd657725b72363e9
+  test_option_ex_43 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Tests.Examples.test_action_ex_37
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+da22b12a14dbb7b8ebb8cbf29f4caa8b
+  test_option_ex_44 :: [GHC.Base.Maybe GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Base.Nothing @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_45) -}
+57f7a7006d1502701f6c8a005dec9368
+  test_option_ex_45 :: [GHC.Base.Maybe GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Base.Nothing @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_46) -}
+db4d8214c2909266682ea8451e4adb69
+  test_option_ex_46 :: [GHC.Base.Maybe GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Base.Nothing @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_47) -}
+9f6d274f45ef6fe79e7d6f90b8c9be5e
+  test_option_ex_47 :: [GHC.Base.Maybe GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.Maybe GHC.Types.Char)
+                   (GHC.Base.Nothing @ GHC.Types.Char)
+                   (GHC.Types.[] @ (GHC.Base.Maybe GHC.Types.Char))) -}
+68f006398eca7ef6b2a306b901343f65
+  test_option_ex_48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "option example 2"#) -}
+653c253fca23d71fb91b1edca90289f2
+  test_option_ex_5 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_option_ex_6) -}
+b919b70ab7f770280dcfbac86b802b1f
+  test_option_ex_6 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_option_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_option_ex_7) -}
+56e8ef43e30eee675fe13292501aa346
+  test_option_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-30 5 3"#) -}
+d86cb913d65e68e1a1fb0274c11d87c9
+  test_option_ex_8 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   (Hare.cons1 @ GHC.Types.Char)
+                   Tests.Examples.test_option_ex_9) -}
+c499d248c45fceca0bb2096a8cf23fea
+  test_option_ex_9 :: Hare.RE (GHC.Types.Char, [GHC.Types.Char])
+  {- Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   @ GHC.Types.Char
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Types.Char, [GHC.Types.Char])>_N
+                   Tests.Examples.test_option_ex_15
+                   Tests.Examples.test_option_ex_10) -}
+8e4938b2aba759d68d361b27fbe14948
+  test_plus_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_plus_ex_15
+                   Tests.Examples.test_plus_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+6dfe9669759ee3a8a249b0a998aeb601
+  test_plus_ex_10 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_plus_ex_14
+                   Tests.Examples.test_plus_ex_11) -}
+c3b4d3d11bf0b93e1db0d41c346904a0
+  test_plus_ex_11 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_plus_ex_13
+                   Tests.Examples.test_plus_ex_12) -}
+4c17ab698117230d5b1678fc276951e1
+  test_plus_ex_12 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_plus_ex_13
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+c1bad79030189584dafbc4de9f8cfa90
+  test_plus_ex_13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "0"#) -}
+0f4f681530d3550650ec4d7345e056bc
+  test_plus_ex_14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "00"#) -}
+fbe0d95fadbc79babc653b9fc5c22057
+  test_plus_ex_15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "plus example 1"#) -}
+6a216b0c416cf80340f86f06fb1b82fe
+  test_plus_ex_16 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[(GHC.Types.Char, GHC.Types.Char)]]
+                        Tests.Examples.$s$fEq[]1
+                        Tests.Examples.$s$fShow[]5
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_plus_ex_23
+                        Tests.Examples.test_plus_ex_17
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+d0bdc99ca104d91b2bee862b3aec434d
+  test_plus_ex_17 :: [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [(GHC.Types.Char, GHC.Types.Char)])
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   (Data.Tuple.snd
+                      @ GHC.Base.String
+                      @ [(GHC.Types.Char, GHC.Types.Char)])
+                   Tests.Examples.test_plus_ex_18) -}
+f6152f4157cc12fa8bbea3c1037f4be5
+  test_plus_ex_18 ::
+    [(GHC.Base.String, [(GHC.Types.Char, GHC.Types.Char)])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [(GHC.Types.Char, GHC.Types.Char)]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_plus_ex_20)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[(GHC.Types.Char, GHC.Types.Char)]>_N)
+                   Tests.Examples.test_plus_ex_19) -}
+e5bdd886814907b260738e102b6db7dd
+  test_plus_ex_19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ab1c3"#) -}
+026bc906f6b84d3e33e74ff0eedec934
+  test_plus_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_plus_ex_34
+                   Tests.Examples.test_plus_ex_16
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+d722fe644803115818d82c7e71a3d68e
+  test_plus_ex_20 :: Hare.RE [(GHC.Types.Char, GHC.Types.Char)]
+  {- Unfolding: (Hare.Action
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   @ ((GHC.Types.Char, GHC.Types.Char),
+                      [(GHC.Types.Char, GHC.Types.Char)])
+                   (Hare.cons1 @ (GHC.Types.Char, GHC.Types.Char))
+                   Tests.Examples.test_plus_ex_21) -}
+e4a36e77ae188def56a36f7cfe96e123
+  test_plus_ex_21 ::
+    Hare.RE
+      ((GHC.Types.Char, GHC.Types.Char),
+       [(GHC.Types.Char, GHC.Types.Char)])
+  {- Unfolding: (Hare.Seq
+                   @ ((GHC.Types.Char, GHC.Types.Char),
+                      [(GHC.Types.Char, GHC.Types.Char)])
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   @~ <((GHC.Types.Char, GHC.Types.Char),
+                        [(GHC.Types.Char, GHC.Types.Char)])>_N
+                   Tests.Examples.test_plus_ex_2_re
+                   Tests.Examples.test_plus_ex_22) -}
+f3fca3c0cae574f610cf91abf9a3e66f
+  test_plus_ex_22 :: Hare.RE [(GHC.Types.Char, GHC.Types.Char)]
+  {- Unfolding: (Hare.Star
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   @~ <[(GHC.Types.Char, GHC.Types.Char)]>_N
+                   Tests.Examples.test_plus_ex_2_re) -}
+5868c0a752fced893f36787c24e62346
+  test_plus_ex_23 :: [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   Tests.Examples.test_plus_ex_33
+                   Tests.Examples.test_plus_ex_24) -}
+9efb175902553cccf09c570376766ce2
+  test_plus_ex_24 :: [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   Tests.Examples.test_plus_ex_30
+                   Tests.Examples.test_plus_ex_25) -}
+5290c87fe160ede695675527e3227f46
+  test_plus_ex_25 :: [[(GHC.Types.Char, GHC.Types.Char)]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [(GHC.Types.Char, GHC.Types.Char)]
+                   Tests.Examples.test_plus_ex_26
+                   (GHC.Types.[] @ [(GHC.Types.Char, GHC.Types.Char)])) -}
+2ceb7738da0f6ab736f180262532b2da
+  test_plus_ex_26 :: [(GHC.Types.Char, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.Examples.test_plus_ex_27
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Types.Char))) -}
+306c327fd1fa682cbf96679c6f6fe8f6
+  test_plus_ex_27 :: (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: ((Tests.Examples.test_plus_ex_29,
+                  Tests.Examples.test_plus_ex_28)) -}
+00821de0f724800981f2a91822fe3b05
+  test_plus_ex_28 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '3'#) -}
+b529c00c79705873b8a5c30a7c2703f8
+  test_plus_ex_29 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'c'#) -}
+91254b9595b8ee2fc4c8de4a77577506
+  test_plus_ex_2_re :: Hare.RE (GHC.Types.Char, GHC.Types.Char)
+  {- Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                   Tests.Examples.test_action_ex_3_atoz
+                   Tests.Examples.test_option_ex_13) -}
+0fc16905cfd504d93dfd1298f26e51c9
+  test_plus_ex_30 :: [(GHC.Types.Char, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.Examples.test_plus_ex_31
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Types.Char))) -}
+e124eabfc2e0bec56dd3c857dd42702f
+  test_plus_ex_31 :: (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs,
+     Unfolding: ((Tests.Examples.test_plus_ex_32,
+                  Tests.Examples.test_cons_ex_15)) -}
+dbfad445826fa3b5935190f922b2b35a
+  test_plus_ex_32 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'b'#) -}
+8319ed5596ebb85375497b3de095d3cc
+  test_plus_ex_33 :: [(GHC.Types.Char, GHC.Types.Char)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.Examples.test_plus_ex_31
+                   Tests.Examples.test_plus_ex_26) -}
+eca61a90fbcc97323663a550d0ece0d7
+  test_plus_ex_34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "plus example 2"#) -}
+7aa68236b79f846d67d79322bbf2b290
+  test_plus_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_plus_ex_9
+                        Tests.Examples.test_plus_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+6adb82eb24feeb6f558c1558182e8dd3
+  test_plus_ex_5 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_plus_ex_6) -}
+d70f5b67e5bf9999a010414fcbbc7733
+  test_plus_ex_6 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_plus_ex_7)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_cons_ex_7) -}
+c7bd19e0d5583a09020b508a0545643c
+  test_plus_ex_7 :: Hare.RE [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Action
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   (Hare.cons1 @ GHC.Types.Char)
+                   Tests.Examples.test_plus_ex_8) -}
+a60527906c388ae1a5c4f2dd4c92bbaf
+  test_plus_ex_8 :: Hare.RE (GHC.Types.Char, [GHC.Types.Char])
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Seq
+                   @ (GHC.Types.Char, [GHC.Types.Char])
+                   @ GHC.Types.Char
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Types.Char, [GHC.Types.Char])>_N
+                   Tests.Examples.test_cons_ex_1_re
+                   Tests.Examples.test_cons_ex_10) -}
+dd3efefa42b22710052c22e160ef3728
+  test_plus_ex_9 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_plus_ex_13
+                   Tests.Examples.test_plus_ex_10) -}
+f70d44b5352cff289489ee5a907a7cb5
+  test_rptRange_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_rptRange_ex_20
+                   Tests.Examples.test_rptRange_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+06d332aced9b6b7cfe73d1c97bff0ecd
+  test_rptRange_ex_10 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_19
+                   Tests.Examples.test_rptRange_ex_11) -}
+97abdf9106157f82d43666e54c0097a0
+  test_rptRange_ex_11 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_18
+                   Tests.Examples.test_rptRange_ex_12) -}
+0c4b2bac86b2f831c06f55ee5b506b1c
+  test_rptRange_ex_12 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_17
+                   Tests.Examples.test_rptRange_ex_13) -}
+6e431ea40920068b08d0c686e9c3d263
+  test_rptRange_ex_13 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_16
+                   Tests.Examples.test_rptRange_ex_14) -}
+e50eec7bb1d2af01a5dd6a2cee5718b4
+  test_rptRange_ex_14 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_15
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+56eeca12ce6a14509b4fee9c74fbc9d0
+  test_rptRange_ex_15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "34"#) -}
+662aba9711897d52015f1b205b06cf06
+  test_rptRange_ex_16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "23"#) -}
+50f670b6e9089f8f3211821a6e8ba8bf
+  test_rptRange_ex_17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "234"#) -}
+4366a5db36929f267f8225c172f29eb3
+  test_rptRange_ex_18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "12"#) -}
+a17bc53e9149c87a783307e84b7a945b
+  test_rptRange_ex_19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "123"#) -}
+dbcdd264ca3923fc863a37b2d45c7956
+  test_rptRange_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_rptRange_ex_27
+                   Tests.Examples.test_rptRange_ex_21
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+0216dba8a02072b521093f6454368ed4
+  test_rptRange_ex_20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rptRange example 1"#) -}
+0659d6170187ebde8e77f31b1cf0614b
+  test_rptRange_ex_21 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_rptRange_ex_25
+                        Tests.Examples.test_rptRange_ex_22
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+c1a8de5a80d5ccafb530f20ef6cc392b
+  test_rptRange_ex_22 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_rptRange_ex_23) -}
+fbf2fc73486c3212471271fb5d80f7d7
+  test_rptRange_ex_23 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_rptRange_ex_24)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_rptRange_ex_7) -}
+8803671a65a5d2913bec78ec4de36310
+  test_rptRange_ex_24 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.$wrptRange
+                   @ GHC.Types.Char
+                   3#
+                   3#
+                   Tests.Examples.test_option_ex_13) -}
+b96d5f4ca1b08338b81cda3bb25f90c9
+  test_rptRange_ex_25 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_19
+                   Tests.Examples.test_rptRange_ex_26) -}
+2f00d31f39754be0dfef2318a490244b
+  test_rptRange_ex_26 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_17
+                   (GHC.Types.[] @ [GHC.Types.Char])) -}
+01ab297dcb544b497483fea6aedeefeb
+  test_rptRange_ex_27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rptRange example 2"#) -}
+d96adfb767f37fe091e0cdb058bc8e9b
+  test_rptRange_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [[GHC.Types.Char]]
+                        GHC.Classes.$fEq[]_$s$fEq[]2
+                        GHC.Show.$fShow[]_$s$fShow[]2
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_rptRange_ex_9
+                        Tests.Examples.test_rptRange_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+acc027398e0c2354af9c5f8397d04683
+  test_rptRange_ex_5 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ [GHC.Types.Char]
+                   (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                   Tests.Examples.test_rptRange_ex_6) -}
+3054a70f80f8374369502e640c03a4c5
+  test_rptRange_ex_6 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ [GHC.Types.Char]
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_rptRange_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                   Tests.Examples.test_rptRange_ex_7) -}
+3b308779d38f948c585be16ee6844386
+  test_rptRange_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1234"#) -}
+e854a954bf7deb5d34dd276fb09b4891
+  test_rptRange_ex_8 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.$wrptRange
+                   @ GHC.Types.Char
+                   2#
+                   4#
+                   Tests.Examples.test_option_ex_13) -}
+04439c05c0a9e971b682ad9ec48ee495
+  test_rptRange_ex_9 :: [[GHC.Types.Char]]
+  {- Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_rptRange_ex_7
+                   Tests.Examples.test_rptRange_ex_10) -}
+434a1d3cf51b7c503eeaef60b4e85a91
+  test_rpt_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_rpt_ex_23
+                   Tests.Examples.test_rpt_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+0ddc325b00f756a16b1b05b35bc5a514
+  test_rpt_ex_10 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.choose
+                   @ GHC.Base.String
+                   Tests.Examples.test_rpt_ex_11) -}
+bdb7c84f3587f487a2d92f4e9b3a4203
+  test_rpt_ex_11 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_16
+                   Tests.Examples.test_rpt_ex_12) -}
+2297e3d36f421e284a8e866a01ee4400
+  test_rpt_ex_12 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_12
+                   Tests.Examples.test_rpt_ex_13) -}
+b3bb7b38b43d26800914dc58c550b38b
+  test_rpt_ex_13 :: [Hare.RE GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ (Hare.RE GHC.Base.String)
+                   Tests.Examples.test_choose_ex_14
+                   (GHC.Types.[] @ (Hare.RE GHC.Base.String))) -}
+a17de2ee79da01ceeb61fbc1028bb5f7
+  test_rpt_ex_14 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   Tests.Examples.test_rpt_ex_21
+                   Tests.Examples.test_rpt_ex_15) -}
+77899a5c79912cb961029354e33e3944
+  test_rpt_ex_15 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   Tests.Examples.test_rpt_ex_19
+                   Tests.Examples.test_rpt_ex_16) -}
+903ee50d71812c9db19b6f21a35c33fb
+  test_rpt_ex_16 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   Tests.Examples.test_rpt_ex_17
+                   (GHC.Types.[] @ (GHC.Base.String, [GHC.Types.Char]))) -}
+2756c6a0453e85d107cc0cb154117600
+  test_rpt_ex_17 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Unfolding: ((Tests.Examples.test_choose_ex_13,
+                  Tests.Examples.test_rpt_ex_18)) -}
+e2992e492d24802545716fd0eb24c9b6
+  test_rpt_ex_18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1121"#) -}
+c24a04e957756ab70434f64ce881b52e
+  test_rpt_ex_19 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Unfolding: ((Tests.Examples.test_choose_ex_15,
+                  Tests.Examples.test_rpt_ex_20)) -}
+aa5f40c9aff0d979828a01ea9dfe72d9
+  test_rpt_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_rpt_ex_28
+                   Tests.Examples.test_rpt_ex_24
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+d51a6bb250ca8073b5b76dd92009a0a5
+  test_rpt_ex_20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1081"#) -}
+e4106486bf622170c332f2bc642d096c
+  test_rpt_ex_21 :: ([GHC.Types.Char], [GHC.Types.Char])
+  {- Unfolding: ((Tests.Examples.test_choose_ex_17,
+                  Tests.Examples.test_rpt_ex_22)) -}
+73404306a32943a3859ae969c661d941
+  test_rpt_ex_22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "3141"#) -}
+5cdb97287835ae3529d3ca3884b17f12
+  test_rpt_ex_23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rpt example 1"#) -}
+d64f5b7abb2626355009a1c51b99a8cf
+  test_rpt_ex_24 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe [GHC.Types.Char])
+                        Tests.Examples.$s$fEqMaybe1
+                        Tests.Examples.$s$fShowMaybe1
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_rpt_ex_27
+                        Tests.Examples.test_rpt_ex_25
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+8103fa83e71c9553367e1132f71785ed
+  test_rpt_ex_25 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ [GHC.Types.Char]
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         Tests.Examples.test_rpt_ex_26)
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <[GHC.Types.Char]>_N)
+                        Tests.Examples.test_option_ex_39 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ [GHC.Types.Char]
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ [GHC.Types.Char]
+                        (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char] x) }) -}
+9f8e92fc6b3d3fcfca169fa5a346c745
+  test_rpt_ex_26 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.$wrpt
+                   @ GHC.Types.Char
+                   0#
+                   Tests.Examples.test_option_ex_42) -}
+a12d4decff2bbfc5fd8bdb7f251aca03
+  test_rpt_ex_27 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Base.Just
+                   @ [GHC.Types.Char]
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+0dfb615670f595c78e8a1914f734bbee
+  test_rpt_ex_28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "rpt example 2"#) -}
+f56124173f554a82fa8920339c8a5b63
+  test_rpt_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ [(GHC.Base.String, [GHC.Types.Char])]
+                        Tests.Examples.$s$fEq[]3
+                        Tests.Examples.$s$fShow[]11
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_rpt_ex_14
+                        Tests.Examples.test_rpt_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+ce87836dcfa8ca2e6786579ded39d2b9
+  test_rpt_ex_5 :: [(GHC.Base.String, [GHC.Types.Char])]
+  {- Unfolding: (GHC.Base.map
+                   @ (GHC.Base.String, (GHC.Base.String, [GHC.Types.Char]))
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   (Data.Tuple.snd
+                      @ GHC.Base.String
+                      @ (GHC.Base.String, [GHC.Types.Char]))
+                   Tests.Examples.test_rpt_ex_6) -}
+766da1d1ad8013d64280f250d9efdb82
+  test_rpt_ex_6 ::
+    [(GHC.Base.String, (GHC.Base.String, [GHC.Types.Char]))]
+  {- Unfolding: ((Hare.matchAnywhere
+                    @ []
+                    @ (GHC.Base.String, [GHC.Types.Char])
+                    GHC.Base.$fAlternative[]
+                    GHC.Base.$fMonad[]
+                    Tests.Examples.test_rpt_ex_8)
+                   `cast`
+                 (HareMonad.N:Hare[0]
+                      <[]>_R <(GHC.Base.String, [GHC.Types.Char])>_N)
+                   Tests.Examples.test_rpt_ex_7) -}
+86fa0c1db354ab4d0abd4bd07438717c
+  test_rpt_ex_7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "COMP3141, MATH1081, and PHYS1121"#) -}
+67af518e9f44c302d10efed04eecd1a6
+  test_rpt_ex_8 :: Hare.RE (GHC.Base.String, [GHC.Types.Char])
+  {- Unfolding: (Hare.Seq
+                   @ (GHC.Base.String, [GHC.Types.Char])
+                   @ GHC.Base.String
+                   @ [GHC.Types.Char]
+                   @~ <(GHC.Base.String, [GHC.Types.Char])>_N
+                   Tests.Examples.test_rpt_ex_10
+                   Tests.Examples.test_rpt_ex_9) -}
+ca50c60b13da839b928faa4df6b6ab26
+  test_rpt_ex_9 :: Hare.RE [GHC.Types.Char]
+  {- Unfolding: (Hare.$wrpt
+                   @ GHC.Types.Char
+                   4#
+                   Tests.Examples.test_option_ex_13) -}
+f8f74d91847a9c272273e7e310eb6dc8
+  test_string_ex_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_string_ex_10
+                   Tests.Examples.test_string_ex_4
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+0d3c9066d04d3298aaaf113ba496d748
+  test_string_ex_10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "string example 1"#) -}
+f2e87907657b129ad72894384c0aab4d
+  test_string_ex_11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        Tests.Examples.$s$fEqMaybe1
+                        Tests.Examples.$s$fShowMaybe1
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        (GHC.Base.Nothing @ GHC.Base.String)
+                        Tests.Examples.test_string_ex_12
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+2a7d2214a07eb51e68ea7653f3678762
+  test_string_ex_12 :: GHC.Base.Maybe GHC.Base.String
+  {- Unfolding: (case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ GHC.Base.String
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         Tests.Examples.test_string_ex_7)
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Base.String>_N)
+                        Tests.Examples.test_string_ex_13 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ GHC.Base.String
+                        (Data.Tuple.snd @ GHC.Base.String @ GHC.Base.String x) }) -}
+cab5472893e0d79499983eb2476fa58b
+  test_string_ex_13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "My favourite subject is MATH1141"#) -}
+045ae1f9b14889134e2b7dda231374a9
+  test_string_ex_14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "string example 2"#) -}
+803b8753ad1405b073d03ee4dec7ac77
+  test_string_ex_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Tests.Examples.test_string_ex_14
+                   Tests.Examples.test_string_ex_11
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+9ab3f5caf46edddedd97a00783a20275
+  test_string_ex_4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta1 :: GHC.Prim.State#
+                              GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Tasty.HUnit.Orig.@=?2
+                        @ (GHC.Base.Maybe GHC.Base.String)
+                        Tests.Examples.$s$fEqMaybe1
+                        Tests.Examples.$s$fShowMaybe1
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        Tests.Examples.test_string_ex_9
+                        Tests.Examples.test_string_ex_5
+                        eta1 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+1e55da12eb0ce08a2246fd599897b857
+  test_string_ex_5 :: GHC.Base.Maybe GHC.Base.String
+  {- Unfolding: (case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ GHC.Base.String
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         Tests.Examples.test_string_ex_7)
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Base.String>_N)
+                        Tests.Examples.test_string_ex_6 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Base.String
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ GHC.Base.String
+                        (Data.Tuple.snd @ GHC.Base.String @ GHC.Base.String x) }) -}
+61294281be0e91fd3e57e3fe48a6fd1d
+  test_string_ex_6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "My favourite subject is COMP3141"#) -}
+f50b35f4b9fc06aa8d1819c871e16add
+  test_string_ex_7 :: Hare.RE GHC.Base.String
+  {- Unfolding: (Hare.string Tests.Examples.test_string_ex_8) -}
+eaa10fe058ab843285cfce176b4d23f4
+  test_string_ex_8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "COMP3141"#) -}
+d129493f4ce0bc7c314d34ab6a624ddd
+  test_string_ex_9 :: GHC.Base.Maybe [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.Just
+                   @ [GHC.Types.Char]
+                   Tests.Examples.test_string_ex_8) -}
+"SPEC/Tests.Examples $fEq(,) @ Char @ Char" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                        GHC.Types.Char)
+                                                            ($dEq :: GHC.Classes.Eq GHC.Types.Char)
+  GHC.Classes.$fEq(,) @ GHC.Types.Char @ GHC.Types.Char $dEq $dEq1
+  = Tests.Examples.$s$fEq(,)
+"SPEC/Tests.Examples $fEq(,) @ [Char] @ [Char]" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                            [GHC.Types.Char])
+                                                                ($dEq :: GHC.Classes.Eq
+                                                                           [GHC.Types.Char])
+  GHC.Classes.$fEq(,) @ [GHC.Types.Char]
+                      @ [GHC.Types.Char]
+                      $dEq
+                      $dEq1
+  = Tests.Examples.$s$fEq(,)1
+"SPEC/Tests.Examples $fEqMaybe @ Char" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                  GHC.Types.Char)
+  GHC.Base.$fEqMaybe @ GHC.Types.Char $dEq
+  = Tests.Examples.$s$fEqMaybe
+"SPEC/Tests.Examples $fEqMaybe @ [Char]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                    [GHC.Types.Char])
+  GHC.Base.$fEqMaybe @ [GHC.Types.Char] $dEq
+  = Tests.Examples.$s$fEqMaybe1
+"SPEC/Tests.Examples $fEqMaybe_$c== @ Char" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                       GHC.Types.Char)
+  GHC.Base.$fEqMaybe_$c== @ GHC.Types.Char $dEq
+  = Tests.Examples.$s$fEqMaybe_$s$fEqMaybe_$c==
+"SPEC/Tests.Examples $fEqMaybe_$c== @ [Char]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         [GHC.Types.Char])
+  GHC.Base.$fEqMaybe_$c== @ [GHC.Types.Char] $dEq
+  = Tests.Examples.$s$fEqMaybe_$s$fEqMaybe_$c==1
+"SPEC/Tests.Examples $fEq[] @ (Char, Char)" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                       (GHC.Types.Char,
+                                                                        GHC.Types.Char))
+  GHC.Classes.$fEq[] @ (GHC.Types.Char, GHC.Types.Char) $dEq
+  = Tests.Examples.$s$fEq[]
+"SPEC/Tests.Examples $fEq[] @ (Maybe Char)" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                       (GHC.Base.Maybe
+                                                                          GHC.Types.Char))
+  GHC.Classes.$fEq[] @ (GHC.Base.Maybe GHC.Types.Char) $dEq
+  = Tests.Examples.$s$fEq[]2
+"SPEC/Tests.Examples $fEq[] @ (String, [Char])" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                           (GHC.Base.String,
+                                                                            [GHC.Types.Char]))
+  GHC.Classes.$fEq[] @ (GHC.Base.String, [GHC.Types.Char]) $dEq
+  = Tests.Examples.$s$fEq[]3
+"SPEC/Tests.Examples $fEq[] @ Bool" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                               GHC.Types.Bool)
+  GHC.Classes.$fEq[] @ GHC.Types.Bool $dEq = Tests.Examples.$s$fEq[]4
+"SPEC/Tests.Examples $fEq[] @ [(Char, Char)]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         [(GHC.Types.Char,
+                                                                           GHC.Types.Char)])
+  GHC.Classes.$fEq[] @ [(GHC.Types.Char, GHC.Types.Char)] $dEq
+  = Tests.Examples.$s$fEq[]1
+"SPEC/Tests.Examples $fEq[]_$c/= @ (Char, Char)" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                            (GHC.Types.Char,
+                                                                             GHC.Types.Char))
+  GHC.Classes.$fEq[]_$c/= @ (GHC.Types.Char, GHC.Types.Char) $dEq
+  = Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=
+"SPEC/Tests.Examples $fEq[]_$c/= @ (Maybe Char)" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                            (GHC.Base.Maybe
+                                                                               GHC.Types.Char))
+  GHC.Classes.$fEq[]_$c/= @ (GHC.Base.Maybe GHC.Types.Char) $dEq
+  = Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=2
+"SPEC/Tests.Examples $fEq[]_$c/= @ (String, [Char])" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                                (GHC.Base.String,
+                                                                                 [GHC.Types.Char]))
+  GHC.Classes.$fEq[]_$c/= @ (GHC.Base.String, [GHC.Types.Char]) $dEq
+  = Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=3
+"SPEC/Tests.Examples $fEq[]_$c/= @ Bool" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                    GHC.Types.Bool)
+  GHC.Classes.$fEq[]_$c/= @ GHC.Types.Bool $dEq
+  = Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=4
+"SPEC/Tests.Examples $fEq[]_$c/= @ [(Char, Char)]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                              [(GHC.Types.Char,
+                                                                                GHC.Types.Char)])
+  GHC.Classes.$fEq[]_$c/= @ [(GHC.Types.Char, GHC.Types.Char)] $dEq
+  = Tests.Examples.$s$fEq[]_$s$fEq[]_$c/=1
+"SPEC/Tests.Examples $fShow(,)_$cshowList @ Char @ Char" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                       GHC.Types.Char)
+                                                                         ($dShow :: GHC.Show.Show
+                                                                                      GHC.Types.Char)
+  GHC.Show.$fShow(,)_$cshowList @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                $dShow
+                                $dShow1
+  = Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList
+"SPEC/Tests.Examples $fShow(,)_$cshowList @ [Char] @ [Char]" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                                           [GHC.Types.Char])
+                                                                             ($dShow :: GHC.Show.Show
+                                                                                          [GHC.Types.Char])
+  GHC.Show.$fShow(,)_$cshowList @ [GHC.Types.Char]
+                                @ [GHC.Types.Char]
+                                $dShow
+                                $dShow1
+  = Tests.Examples.$s$fShow(,)_$s$fShow(,)_$cshowList1
+"SPEC/Tests.Examples $fShowMaybe @ [Char]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                        [GHC.Types.Char])
+  GHC.Show.$fShowMaybe @ [GHC.Types.Char] $dShow
+  = Tests.Examples.$s$fShowMaybe1
+"SPEC/Tests.Examples $fShowMaybe_$cshowList @ Char" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                 GHC.Types.Char)
+  GHC.Show.$fShowMaybe_$cshowList @ GHC.Types.Char $dShow
+  = Tests.Examples.$s$fShowMaybe_$s$fShowMaybe_$cshowList
+"SPEC/Tests.Examples $fShowMaybe_$cshowList @ [Char]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                   [GHC.Types.Char])
+  GHC.Show.$fShowMaybe_$cshowList @ [GHC.Types.Char] $dShow
+  = Tests.Examples.$s$fShowMaybe_$s$fShowMaybe_$cshowList1
+"SPEC/Tests.Examples $fShow[] @ (Maybe Char)" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                           (GHC.Base.Maybe
+                                                                              GHC.Types.Char))
+  GHC.Show.$fShow[] @ (GHC.Base.Maybe GHC.Types.Char) $dShow
+  = Tests.Examples.$s$fShow[]7
+"SPEC/Tests.Examples $fShow[] @ (String, [Char])" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                               (GHC.Base.String,
+                                                                                [GHC.Types.Char]))
+  GHC.Show.$fShow[] @ (GHC.Base.String, [GHC.Types.Char]) $dShow
+  = Tests.Examples.$s$fShow[]11
+"SPEC/Tests.Examples $fShow[] @ Bool" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                   GHC.Types.Bool)
+  GHC.Show.$fShow[] @ GHC.Types.Bool $dShow
+  = Tests.Examples.$s$fShow[]16
+"SPEC/Tests.Examples $fShow[] @ [(Char, Char)]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                             [(GHC.Types.Char,
+                                                                               GHC.Types.Char)])
+  GHC.Show.$fShow[] @ [(GHC.Types.Char, GHC.Types.Char)] $dShow
+  = Tests.Examples.$s$fShow[]5
+"SPEC/Tests.Examples $fShow[]_$cshow @ Bool" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          GHC.Types.Bool)
+  GHC.Show.$fShow[]_$cshow @ GHC.Types.Bool $dShow
+  = Tests.Examples.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/Tests.Examples $fShow[]_$cshowList @ Bool" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                              GHC.Types.Bool)
+  GHC.Show.$fShow[]_$cshowList @ GHC.Types.Bool $dShow
+  = Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowList1
+"SPEC/Tests.Examples $fShow[]_$cshowList @ [(Char, Char)]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                        [(GHC.Types.Char,
+                                                                                          GHC.Types.Char)])
+  GHC.Show.$fShow[]_$cshowList @ [(GHC.Types.Char, GHC.Types.Char)]
+                               $dShow
+  = Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/Tests.Examples $fShow[]_$cshowsPrec @ Bool" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                               GHC.Types.Bool)
+  GHC.Show.$fShow[]_$cshowsPrec @ GHC.Types.Bool $dShow
+  = Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowsPrec1
+"SPEC/Tests.Examples $fShow[]_$cshowsPrec @ [(Char, Char)]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                         [(GHC.Types.Char,
+                                                                                           GHC.Types.Char)])
+  GHC.Show.$fShow[]_$cshowsPrec @ [(GHC.Types.Char, GHC.Types.Char)]
+                                $dShow
+  = Tests.Examples.$s$fShow[]_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

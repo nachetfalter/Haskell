@@ -1,0 +1,41 @@
+Configuring ansi-terminal-0.7.1.1...
+Preprocessing library for ansi-terminal-0.7.1.1..
+Building library for ansi-terminal-0.7.1.1..
+[1 of 9] Compiling System.Console.ANSI.Types ( System\Console\ANSI\Types.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Types.o )
+[2 of 9] Compiling System.Console.ANSI.Codes ( System\Console\ANSI\Codes.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Codes.o )
+[3 of 9] Compiling System.Console.ANSI.Unix ( System\Console\ANSI\Unix.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Unix.o )
+[4 of 9] Compiling System.Console.ANSI.Windows.Emulator.Codes ( System\Console\ANSI\Windows\Emulator\Codes.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Windows\Emulator\Codes.o )
+[5 of 9] Compiling System.Console.ANSI.Windows.Foreign ( System\Console\ANSI\Windows\Foreign.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Windows\Foreign.o )
+
+[;1mSystem\Console\ANSI\Windows\Foreign.hs:245:21: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverflowed-literals[0m[0m[;1m][0m[0m[;1m
+    Literal -10 is out of the GHC.Word.Word32 range 0..4294967295[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m245 |[0m[0m sTD_INPUT_HANDLE = -[;1m[35m10[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m                     ^^[0m[0m
+[0m[0m[0m
+[;1mSystem\Console\ANSI\Windows\Foreign.hs:246:22: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverflowed-literals[0m[0m[;1m][0m[0m[;1m
+    Literal -11 is out of the GHC.Word.Word32 range 0..4294967295[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m246 |[0m[0m sTD_OUTPUT_HANDLE = -[;1m[35m11[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m                      ^^[0m[0m
+[0m[0m[0m
+[;1mSystem\Console\ANSI\Windows\Foreign.hs:247:21: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverflowed-literals[0m[0m[;1m][0m[0m[;1m
+    Literal -12 is out of the GHC.Word.Word32 range 0..4294967295[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m247 |[0m[0m sTD_ERROR_HANDLE = -[;1m[35m12[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m                     ^^[0m[0m
+[0m[0m[0m[6 of 9] Compiling System.Console.ANSI.Windows.Detect ( System\Console\ANSI\Windows\Detect.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Windows\Detect.o )
+[7 of 9] Compiling System.Console.ANSI.Windows.Emulator ( System\Console\ANSI\Windows\Emulator.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Windows\Emulator.o )
+
+[;1mSystem\Console\ANSI\Windows\Emulator.hs:114:9: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-do-bind[0m[0m[;1m][0m[0m[;1m
+    A do-notation statement discarded a result of type `DWORD'
+    Suppress this warning by saying
+      `_ <- fillConsoleOutputCharacter
+              handle clearChar fill_length fill_cursor_pos'[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m114 |[0m[0m         [;1m[35mfillConsoleOutputCharacter handle clearChar fill_length fill_cursor_pos[0m[0m
+[;1m[34m    |[0m[0m[;1m[35m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[8 of 9] Compiling System.Console.ANSI.Windows ( System\Console\ANSI\Windows.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI\Windows.o )
+[9 of 9] Compiling System.Console.ANSI ( System\Console\ANSI.hs, .stack-work\dist\5c8418a7\build\System\Console\ANSI.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\ansi-terminal-0.7.1.1-7jooQD7Q4Ah9JvyDmE1jcZ
+Registering library for ansi-terminal-0.7.1.1..

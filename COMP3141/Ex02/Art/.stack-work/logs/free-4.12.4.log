@@ -1,0 +1,50 @@
+Configuring free-4.12.4...
+Preprocessing library for free-4.12.4..
+Building library for free-4.12.4..
+[ 1 of 16] Compiling Control.Alternative.Free ( src\Control\Alternative\Free.hs, .stack-work\dist\5c8418a7\build\Control\Alternative\Free.o )
+[ 2 of 16] Compiling Control.Alternative.Free.Final ( src\Control\Alternative\Free\Final.hs, .stack-work\dist\5c8418a7\build\Control\Alternative\Free\Final.o )
+[ 3 of 16] Compiling Control.Applicative.Free ( src\Control\Applicative\Free.hs, .stack-work\dist\5c8418a7\build\Control\Applicative\Free.o )
+[ 4 of 16] Compiling Control.Applicative.Free.Final ( src\Control\Applicative\Free\Final.hs, .stack-work\dist\5c8418a7\build\Control\Applicative\Free\Final.o )
+[ 5 of 16] Compiling Control.Applicative.Trans.Free ( src\Control\Applicative\Trans\Free.hs, .stack-work\dist\5c8418a7\build\Control\Applicative\Trans\Free.o )
+[ 6 of 16] Compiling Control.Comonad.Cofree.Class ( src\Control\Comonad\Cofree\Class.hs, .stack-work\dist\5c8418a7\build\Control\Comonad\Cofree\Class.o )
+[ 7 of 16] Compiling Control.Comonad.Cofree ( src\Control\Comonad\Cofree.hs, .stack-work\dist\5c8418a7\build\Control\Comonad\Cofree.o )
+[ 8 of 16] Compiling Control.Comonad.Trans.Cofree ( src\Control\Comonad\Trans\Cofree.hs, .stack-work\dist\5c8418a7\build\Control\Comonad\Trans\Cofree.o )
+[ 9 of 16] Compiling Control.Comonad.Trans.Coiter ( src\Control\Comonad\Trans\Coiter.hs, .stack-work\dist\5c8418a7\build\Control\Comonad\Trans\Coiter.o )
+[10 of 16] Compiling Control.Monad.Free.Class ( src\Control\Monad\Free\Class.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Free\Class.o )
+[11 of 16] Compiling Control.Monad.Free.TH ( src\Control\Monad\Free\TH.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Free\TH.o )
+[12 of 16] Compiling Control.Monad.Trans.Free ( src\Control\Monad\Trans\Free.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Trans\Free.o )
+[13 of 16] Compiling Control.Monad.Free ( src\Control\Monad\Free.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Free.o )
+[14 of 16] Compiling Control.Monad.Free.Church ( src\Control\Monad\Free\Church.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Free\Church.o )
+[15 of 16] Compiling Control.Monad.Trans.Free.Church ( src\Control\Monad\Trans\Free\Church.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Trans\Free\Church.o )
+
+[;1msrc\Control\Monad\Trans\Free\Church.hs:83:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    * The constraint `Eq (FreeT f m a)' matches an instance declaration
+      instance [safe] Eq (m (FreeF f a (FreeT f m a))) =>
+                      Eq (FreeT f m a)
+        -- Defined at src\Control\Monad\Trans\Free.hs:182:1
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    * In the context: (Functor f, Monad m, Eq (FreeT f m a))
+      While checking an instance declaration
+      In the instance declaration for `Eq (FT f m a)'[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m83 |[0m[0m instance [;1m[35m(Functor f, Monad m, Eq (FreeT f m a)) => Eq (FT f m a)[0m[0m where
+[;1m[34m   |[0m[0m[;1m[35m          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1msrc\Control\Monad\Trans\Free\Church.hs:86:10: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wsimplifiable-class-constraints[0m[0m[;1m][0m[0m[;1m
+    * The constraint `Ord (FreeT f m a)'
+        matches an instance declaration
+      instance [safe] Ord (m (FreeF f a (FreeT f m a))) =>
+                      Ord (FreeT f m a)
+        -- Defined at src\Control\Monad\Trans\Free.hs:187:1
+      This makes type inference for inner bindings fragile;
+        either use MonoLocalBinds, or simplify it using the instance
+    * In the context: (Functor f, Monad m, Ord (FreeT f m a))
+      While checking an instance declaration
+      In the instance declaration for `Ord (FT f m a)'[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m86 |[0m[0m instance [;1m[35m(Functor f, Monad m, Ord (FreeT f m a)) => Ord (FT f m a)[0m[0m where
+[;1m[34m   |[0m[0m[;1m[35m          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[16 of 16] Compiling Control.Monad.Trans.Iter ( src\Control\Monad\Trans\Iter.hs, .stack-work\dist\5c8418a7\build\Control\Monad\Trans\Iter.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\free-4.12.4-K66VK5Id22GLrDqJ9EGnrO
+Registering library for free-4.12.4..

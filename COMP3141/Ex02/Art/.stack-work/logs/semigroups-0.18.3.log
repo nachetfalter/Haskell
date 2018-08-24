@@ -1,0 +1,6 @@
+Configuring semigroups-0.18.3...
+Preprocessing library for semigroups-0.18.3..
+Building library for semigroups-0.18.3..
+[1 of 1] Compiling Data.Semigroup.Generic ( src\Data\Semigroup\Generic.hs, .stack-work\dist\5c8418a7\build\Data\Semigroup\Generic.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\semigroups-0.18.3-3aCIuYG4ID286XaN6MuQu7
+Registering library for semigroups-0.18.3..

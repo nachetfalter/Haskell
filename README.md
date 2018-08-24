@@ -1,2 +1,2 @@
 # Haskell
-All my haskell code
+This repo contains all my haskell code

@@ -1,0 +1,207 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-22 09:26:47.7494602 UTC
+
+interface main@main:Tests.Support 8002
+  interface hash: 8b971b50efe770e63f24dfb9708352b9
+  ABI hash: 11dd8db90448cf5201a9837324e999cd
+  export-list hash: 350e8962748594e0c309615057b5b13a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7f906df0694b3dd979a2e40bc77da8b5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.Support.assertEq
+  Tests.Support.testRE
+module dependencies: Hare HareMonad
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-CdiTOvx5ZEQ2RerUYIP05k
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-KaeMs0wRg3QC5nOlh5MJx3
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-HJkbllVKjCvKRUvctswKnJ
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      process-1.4.3.0@process-1.4.3.0
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo
+                      tasty-hunit-0.9.2@tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unbounded-delays-0.1.1.0@unbounded-delays-0.1.1.0-8pvOsE97fmS7WDAN5vUbqX
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.String
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo:Test.Tasty.Core
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.IO 4d461f9283683225c61e68db403481ad
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  Hare cfe196b292cb030fc49fbfc9add44d74
+  exports: 3f0d67ee01e33a7610568b1d92b67a2e
+  =~ 21e939df0b12983dbc3f0263d7005f1d
+  RE 02a5be124d271155c17e6f84c5d883ca
+import  -/  tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo:Test.Tasty bdd7d9694034e0aabee67dbd2cce1334
+import  -/  tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo:Test.Tasty.Core a4ee146969c72bbe899a3c6bf393ba7c
+import  -/  tasty-hunit-0.9.2@tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw:Test.Tasty.HUnit e88b14d1e9e15d8b9e25b31d42985512
+import  -/  tasty-hunit-0.9.2@tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw:Test.Tasty.HUnit.Orig ad6268b565caeab958c87d086af41763
+8391adb949b79ebacea049760227cde9
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tests.Support.$trModule2
+                   Tests.Support.$trModule1) -}
+20a48c0502864853eb6add0bb5388239
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tests.Support"#) -}
+8c435681805775905e882515e43c3642
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+524423a2092d3012bd7f43aee4fd9263
+  assertEq ::
+    (GHC.Classes.Eq a, GHC.Show.Show a) =>
+    a -> a -> Test.Tasty.HUnit.Orig.Assertion
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A)><L,U(A,C(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Tests.Support.assertEq1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Classes.Eq a>_R
+                 ->_R <GHC.Show.Show a>_R
+                 ->_R <a>_R
+                 ->_R <a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+7930cccf312eb22c9c52fbc278459334
+  assertEq1 ::
+    (GHC.Classes.Eq a, GHC.Show.Show a) =>
+    a
+    -> a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 5,
+     Strictness: <L,U(C(C1(U)),A)><L,U(A,C(U),A)><L,U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dShow :: GHC.Show.Show a)
+                   (eta :: a)
+                   (eta1 :: a)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Test.Tasty.HUnit.Orig.@=?2
+                   @ a
+                   $dEq
+                   $dShow
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   eta1
+                   eta
+                   eta2) -}
+e88430e4866270686c082d373c7eff97
+  testRE ::
+    (GHC.Classes.Eq a, GHC.Show.Show a) =>
+    Test.Tasty.Core.TestName
+    -> Hare.RE a -> GHC.IO.FilePath -> [a] -> Test.Tasty.Core.TestTree
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><L,U(A,A,U)>,
+     Unfolding: (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   ($dShow :: GHC.Show.Show a) ->
+                 let {
+                   $dEq1 :: GHC.Classes.Eq [a] = GHC.Classes.$fEq[] @ a $dEq
+                 } in
+                 let {
+                   $dShow1 :: GHC.Show.Show [a] = GHC.Show.$fShow[] @ a $dShow
+                 } in
+                 \ (n :: Test.Tasty.Core.TestName)
+                   (re :: Hare.RE a)
+                   (fp :: GHC.IO.FilePath)
+                   (rs :: [a]) ->
+                 Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   n
+                   (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                    case GHC.IO.Handle.FD.openFile1
+                           fp
+                           GHC.IO.IOMode.ReadMode
+                           eta1 of ds1 { (#,#) ipv ipv2 ->
+                    case GHC.IO.Handle.Text.hGetContents1
+                           ipv2
+                           ipv of ds2 { (#,#) ipv1 ipv3 ->
+                    case Test.Tasty.HUnit.Orig.@=?2
+                           @ [a]
+                           $dEq1
+                           $dShow1
+                           (GHC.Types.[] @ GHC.Types.Char)
+                           rs
+                           (GHC.Base.map
+                              @ (GHC.Base.String, a)
+                              @ a
+                              (Data.Tuple.snd @ GHC.Base.String @ a)
+                              ((Hare.matchAnywhere
+                                  @ []
+                                  @ a
+                                  GHC.Base.$fAlternative[]
+                                  GHC.Base.$fMonad[]
+                                  re)
+                                 `cast`
+                               (HareMonad.N:Hare[0] <[]>_R <a>_N)
+                                 ipv3))
+                           ipv1 of ds { (#,#) ipv4 ipv5 ->
+                    (# ipv4, GHC.Types.[] @ GHC.Types.Char #) } } })
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

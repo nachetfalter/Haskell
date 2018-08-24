@@ -1,0 +1,14 @@
+Configuring tasty-hunit-0.9.2...
+Building tasty-hunit-0.9.2...
+Preprocessing library tasty-hunit-0.9.2...
+[1 of 3] Compiling Test.Tasty.HUnit.Orig ( Test\Tasty\HUnit\Orig.hs, .stack-work\dist\ca59d0ab\build\Test\Tasty\HUnit\Orig.o )
+[2 of 3] Compiling Test.Tasty.HUnit.Steps ( Test\Tasty\HUnit\Steps.hs, .stack-work\dist\ca59d0ab\build\Test\Tasty\HUnit\Steps.o )
+
+Test\Tasty\HUnit\Steps.hs:4:1: warning: [-Wunused-imports]
+    The import of `Control.Applicative' is redundant
+      except perhaps to import instances from `Control.Applicative'
+    To import instances alone, use: import Control.Applicative()
+[3 of 3] Compiling Test.Tasty.HUnit ( Test\Tasty\HUnit.hs, .stack-work\dist\ca59d0ab\build\Test\Tasty\HUnit.o )
+Installing library in
+C:\sr\snapshots\518da490\lib\x86_64-windows-ghc-8.0.2\tasty-hunit-0.9.2-160tsYx5Fmt6fgeypi3WOw
+Registering tasty-hunit-0.9.2...

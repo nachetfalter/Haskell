@@ -1,0 +1,303 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-23 09:19:13.921692 UTC
+
+interface main@main:Hare 8002
+  interface hash: b9b4ea5c48eaed8a10b677e96a18f989
+  ABI hash: 0a1b6055753b6aa48fa68f07bfde563a
+  export-list hash: 3f0d67ee01e33a7610568b1d92b67a2e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 044b75def7525e931370c486b6e2bb10
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Hare.=~
+  Hare.choose
+  Hare.cons
+  Hare.match
+  Hare.matchAnywhere
+  Hare.option
+  Hare.plus
+  Hare.rpt
+  Hare.rptRange
+  Hare.string
+  Hare.RE{Hare.Action Hare.Char Hare.Choose Hare.Empty Hare.Fail Hare.Seq Hare.Star}
+module dependencies: HareMonad
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 2c56a0c43327cbbcb6e7a55bf05443c9
+import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Functor 682cc832c233b71cec70179490a08631
+import  -/  base-4.9.1.0:Data.Tuple b07f695e7ce8fe20cc8a32abf62f60ec
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  HareMonad cdbd7bb00ff56ea48cd4802879460fe7
+  exports: 66daa7df5b4e7df25f6cea180671757e
+  Hare 07a98526ba4f7aea856502ea77d21c81
+  failure 0eba2a2059121738db832b4855527cbc
+  hare 88729b9c4666ab1005b892a081f8eee6
+  readCharacter 21f798729562d8bf5e61dbb42541639f
+fixities infixr 9 cons
+41899b12e147a749a639ddc84aa6d7e8
+  $tc'Action :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14669722645425666456##
+                   18427429908828539568##
+                   Hare.$trModule
+                   Hare.$tc'Action1) -}
+3258a4c171eb1a813eefecc515b58076
+  $tc'Action1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Action"#) -}
+a6a5f0171a1d21b3d412edfc59e05b88
+  $tc'Char :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16530624872227490215##
+                   10007112855455435909##
+                   Hare.$trModule
+                   Hare.$tc'Char1) -}
+bc5e04c97fc4eb1c7c13ea83885888ce
+  $tc'Char1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Char"#) -}
+6ee4541950a02e0415a4b10e16eff879
+  $tc'Choose :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16892779977964454598##
+                   14063304697323726471##
+                   Hare.$trModule
+                   Hare.$tc'Choose1) -}
+4f7575ebcb916f79359dd113ae5bdbcf
+  $tc'Choose1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Choose"#) -}
+18f9ac3f73f8decfb315f6bc6f12d6e4
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   655311611567228775##
+                   9468563580042146248##
+                   Hare.$trModule
+                   Hare.$tc'Empty1) -}
+8281c25d54f9c8976668f06182a5c0ed
+  $tc'Empty1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Empty"#) -}
+c86f5fdbba5a3bf49beb4e267288aec5
+  $tc'Fail :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13641272326968809193##
+                   3553684818733377725##
+                   Hare.$trModule
+                   Hare.$tc'Fail1) -}
+0c0a520b7c80a6634b68e220c4868a38
+  $tc'Fail1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Fail"#) -}
+73de058b13912f2db33f23c47330baaf
+  $tc'Seq :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2737040656881663007##
+                   17847664376599532250##
+                   Hare.$trModule
+                   Hare.$tc'Seq1) -}
+cdae16da13580219b33baa43a25784f5
+  $tc'Seq1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Seq"#) -}
+f31834c024749911bf3f8908dc023374
+  $tc'Star :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17791384416983263670##
+                   17044529851608609897##
+                   Hare.$trModule
+                   Hare.$tc'Star1) -}
+4a6ca8b055e623e0acd3d1afa62db380
+  $tc'Star1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Star"#) -}
+fc1b127469762309f3f9284faec2affd
+  $tcRE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11947541829636035797##
+                   9609739407163694250##
+                   Hare.$trModule
+                   Hare.$tcRE1) -}
+d52df542e6a3c9b2963cf7bef705e39f
+  $tcRE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RE"#) -}
+4b86e509d138122c8b9004c760ce4679
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Hare.$trModule2 Hare.$trModule1) -}
+5c0bb5efd66c77007808f6f81c882406
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Hare"#) -}
+8ea1a10574d3c872506ee77dd29a6015
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+7677031a8d62a916ca1f47d24de86257
+  $wrpt :: GHC.Prim.Int# -> Hare.RE a -> Hare.RE [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+4a1cae7166383eed2e64ed3fe25db1c2
+  $wrptRange ::
+    GHC.Prim.Int# -> GHC.Prim.Int# -> Hare.RE a -> Hare.RE [a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><S,U><L,U>,
+     Inline: [0] -}
+21e939df0b12983dbc3f0263d7005f1d
+  (=~) ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    GHC.Base.String -> Hare.RE a -> f a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S(S(C(C(S))L)LLLL)LLLL),U(U(U(U,U),U,U,U,U),U,C(C1(U)),A,A)><L,U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><L,U><L,U>,
+     Unfolding: (\ @ (f :: * -> *)
+                   @ a
+                   ($dAlternative :: GHC.Base.Alternative f)
+                   ($dMonad :: GHC.Base.Monad f)
+                   (eta :: GHC.Base.String)
+                   (eta1 :: Hare.RE a) ->
+                 GHC.Base.fmap
+                   @ f
+                   (GHC.Base.$p1Applicative
+                      @ f
+                      (GHC.Base.$p1Alternative @ f $dAlternative))
+                   @ (GHC.Base.String, a)
+                   @ a
+                   (Data.Tuple.snd @ GHC.Base.String @ a)
+                   ((Hare.matchAnywhere @ f @ a $dAlternative $dMonad eta1)
+                      `cast`
+                    (HareMonad.N:Hare[0] <f>_R <a>_N)
+                      eta)) -}
+02a5be124d271155c17e6f84c5d883ca
+  type role RE nominal
+  data RE a where
+    Empty :: RE ()
+    Fail :: RE a
+    Char :: [GHC.Types.Char] -> RE GHC.Types.Char
+    Seq :: (Hare.RE a1) -> (Hare.RE b) -> RE (a1, b)
+    Choose :: (Hare.RE a) -> (Hare.RE a) -> RE a
+    Star :: (Hare.RE a1) -> RE [a1]
+    Action :: (a1 -> a) -> (Hare.RE a1) -> RE a
+a1e6916c795090c0491fc485d2f2bd5e
+  choose :: [Hare.RE a] -> Hare.RE a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+10725a67e859b58d6e7a24cc50cb2341
+  cons :: Hare.RE a -> Hare.RE [a] -> Hare.RE [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (x :: Hare.RE a) (xs :: Hare.RE [a]) ->
+                 Hare.Action
+                   @ [a]
+                   @ (a, [a])
+                   (Hare.cons1 @ a)
+                   (Hare.$WSeq @ a @ [a] x xs)) -}
+0fe9dd8a9d277ea19a0b2d0dada61de2
+  cons1 :: (a, [a]) -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(1*U,1*U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: (a, [a])) ->
+                 GHC.Types.:
+                   @ a
+                   (Data.Tuple.fst @ a @ [a] x)
+                   (Data.Tuple.snd @ a @ [a] x)) -}
+aefd0b6b366c8d9059e4c91ca1e417e5
+  match ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    Hare.RE a -> HareMonad.Hare f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(U,U,U,U,U),U,C(C1(U)),A,A)><L,U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><S,1*U> -}
+299add50bf49b019e16dfb70538503de
+  matchAnywhere ::
+    (GHC.Base.Alternative f, GHC.Base.Monad f) =>
+    Hare.RE a -> HareMonad.Hare f a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(U(U,U,U,U,U),U,C(C1(U)),A,A)><L,U(U(U,U,U,U,U),C(C1(U)),A,C(U),A)><L,U> -}
+b2371a16466f1773e5cc6a83da0a20a3
+  option :: Hare.RE a -> Hare.RE (GHC.Base.Maybe a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m5,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (re :: Hare.RE a) ->
+                 Hare.Choose
+                   @ (GHC.Base.Maybe a)
+                   (Hare.Action @ (GHC.Base.Maybe a) @ a (GHC.Base.Just @ a) re)
+                   (Hare.option1 @ a)) -}
+5e7ccb16e73b5b4e0ec960af4db01640
+  option1 :: Hare.RE (GHC.Base.Maybe a)
+  {- HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 Hare.Action
+                   @ (GHC.Base.Maybe a)
+                   @ ()
+                   (Hare.option2 @ a)
+                   Hare.$WEmpty) -}
+5119bc83d30799b5d0571fe5fb63d1a6
+  option2 :: () -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a (x :: ()) -> GHC.Base.Nothing @ a) -}
+95949bbc60f0d1272ff13b05f9273baa
+  plus :: Hare.RE a -> Hare.RE [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (re :: Hare.RE a) ->
+                 Hare.Action
+                   @ [a]
+                   @ (a, [a])
+                   (Hare.cons1 @ a)
+                   (Hare.Seq
+                      @ (a, [a])
+                      @ a
+                      @ [a]
+                      @~ <(a, [a])>_N
+                      re
+                      (Hare.$WStar @ a re))) -}
+a52d5c74b5bc00ac8c69931d717ee32e
+  rpt :: GHC.Types.Int -> Hare.RE a -> Hare.RE [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: GHC.Types.Int) (w1 :: Hare.RE a) ->
+                 case w of ww { GHC.Types.I# ww1 -> Hare.$wrpt @ a ww1 w1 }) -}
+b3d5b6d2a42a31691922df5115ee78f7
+  rptRange ::
+    (GHC.Types.Int, GHC.Types.Int) -> Hare.RE a -> Hare.RE [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S(S)),1*U(1*U(U),1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (w :: (GHC.Types.Int, GHC.Types.Int)) (w1 :: Hare.RE a) ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.I# ww4 ->
+                 case ww2 of ww5 { GHC.Types.I# ww6 ->
+                 Hare.$wrptRange @ a ww4 ww6 w1 } } }) -}
+2c119340b74b059fcf8b770a6831df64
+  string :: GHC.Base.String -> Hare.RE GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

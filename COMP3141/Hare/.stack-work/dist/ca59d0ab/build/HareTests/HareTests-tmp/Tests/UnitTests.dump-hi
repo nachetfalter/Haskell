@@ -1,0 +1,2029 @@
+
+==================== FINAL INTERFACE ====================
+2018-05-22 09:26:49.9215847 UTC
+
+interface main@main:Tests.UnitTests 8002
+  interface hash: b17c61435843a6d08a36706f25695b0b
+  ABI hash: d3de3079b368126e5e6bb421bb95c2c0
+  export-list hash: 06521a885152dcfb8a585581d379cf5d
+  orphan hash: 07b24241c1005803097f4fb6ac58333b
+  flag hash: 51a850f4a53e280bacefecc3adabc865
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Tests.UnitTests.substring
+  Tests.UnitTests.test_ch_1
+  Tests.UnitTests.test_ch_2
+  Tests.UnitTests.test_ch_3
+  Tests.UnitTests.test_ch_4
+  Tests.UnitTests.test_ch_5
+  Tests.UnitTests.test_char_filter
+  Tests.UnitTests.test_char_maybe
+  Tests.UnitTests.test_empty_list
+  Tests.UnitTests.test_empty_maybe
+  Tests.UnitTests.test_fail_list
+  Tests.UnitTests.test_fail_maybe
+  Tests.UnitTests.test_seq_1
+  Tests.UnitTests.test_seq_2
+  Tests.UnitTests.test_seq_3
+  Tests.UnitTests.test_seq_4
+  Tests.UnitTests.test_seq_5
+  Tests.UnitTests.test_star_1
+  Tests.UnitTests.test_star_2
+  Tests.UnitTests.test_star_3
+module dependencies: Hare HareMonad
+package dependencies: QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-CdiTOvx5ZEQ2RerUYIP05k
+                      ansi-wl-pprint-0.6.7.3@ansi-wl-pprint-0.6.7.3-KaeMs0wRg3QC5nOlh5MJx3
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      optparse-applicative-0.13.2.0@optparse-applicative-0.13.2.0-HJkbllVKjCvKRUvctswKnJ
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa
+                      regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt
+                      tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo
+                      tasty-quickcheck-0.8.4@tasty-quickcheck-0.8.4-KNHtV2m57CG25wQHIzzmOv
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unbounded-delays-0.1.1.0@unbounded-delays-0.1.1.0-8pvOsE97fmS7WDAN5vUbqX
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         regex-base-0.93.2@regex-base-0.93.2-AYjYAsBidAc8f5XNm9b2Aa:Text.Regex.Base.Context
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2@regex-tdfa-1.2.2-CuFri6F1SLwFkkN6cPEwX5:Text.Regex.TDFA.String
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         clock-0.7.2@clock-0.7.2-8dRNleB7rysIZAOReuhpZA:System.Clock
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-1mTloBSoUxv8dqUr8XBGBt:Data.Tagged
+                         tasty-0.11.3@tasty-0.11.3-9ltSI18aAPrAlrnuKCIGdo:Test.Tasty.Core
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.List 7349774f430841349c90dfd1144aea97
+import  -/  base-4.9.1.0:Data.OldList c9282ee91951bdcbd918d2960562c007
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  Hare cfe196b292cb030fc49fbfc9add44d74
+  exports: 3f0d67ee01e33a7610568b1d92b67a2e
+  =~ 21e939df0b12983dbc3f0263d7005f1d
+  Char e398ed7ae80d873cc0ab855976960f98
+  Choose 71c1b001856810c6a9dbeaf7c71fade6
+  Empty dcbc5fe7c00b84aec286fcdf1ad29000
+  Fail cb873987642943b9ca3d0016c10dcc98
+  Seq 7cadc1bd046c61aeb71552ed8bd31603
+  Star 577d5433495ac7fc97fe684cde829ba7
+import  -/  tasty-quickcheck-0.8.4@tasty-quickcheck-0.8.4-KNHtV2m57CG25wQHIzzmOv:Test.Tasty.QuickCheck d4afaedd7ca3172b598c05c102687a66
+4831fd5c38422566407a35f0e6cf44c2
+  $s$fArbitrary[]_$s$fArbitrary[]_$cshrink ::
+    [GHC.Types.Char] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Types.Char]) ->
+                 Test.QuickCheck.Arbitrary.shrinkList
+                   @ GHC.Types.Char
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
+                   xs) -}
+607b49948c85770085ee8d2ef129513f
+  $s$fEq(,) :: GHC.Classes.Eq ((), GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ((), GHC.Types.Char)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ ()
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEq()
+                     GHC.Classes.$fEqChar)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ ()
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEq()
+                     GHC.Classes.$fEqChar) -}
+c8f2cebb16be37bfd0d7d70d5987b561
+  $s$fEq(,)1 :: GHC.Classes.Eq (GHC.Types.Char, ())
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, ())
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Types.Char
+                     @ ()
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEq())
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Types.Char
+                     @ ()
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEq()) -}
+8d269309342495ec75ea230a56653032
+  $s$fEq(,)2 :: GHC.Classes.Eq (GHC.Types.Char, GHC.Types.Char)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Types.Char, GHC.Types.Char)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Types.Char
+                     @ GHC.Types.Char
+                     GHC.Classes.$fEqChar
+                     GHC.Classes.$fEqChar) -}
+0627688cbc6c9391c60c07120194c3cf
+  $s$fEq[] :: GHC.Classes.Eq [()]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [()]
+                  (GHC.Classes.$fEq[]_$c== @ () GHC.Classes.$fEq())
+                  Tests.UnitTests.$s$fEq[]_$s$fEq[]_$c/= -}
+2174f186dc57e723838ba48ebdf9c977
+  $s$fEq[]_$s$fEq[]_$c/= :: [()] -> [()] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [()]) (y :: [()]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c== @ () GHC.Classes.$fEq() x y)) -}
+8f0be35a6ee5a07d4fbc1a1fc182a84a
+  $stestProperty10 ::
+    (GHC.Types.Char -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (f :: GHC.Types.Char -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ GHC.Types.Char
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShowChar
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Char>_R))
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar_$cshrink
+                   f
+                   eta
+                   eta1) -}
+d961229e9a4035093ff498e4f634a3c2
+  $stestProperty2 ::
+    Test.QuickCheck.Random.QCGen -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int)[OneShot] ->
+                 case eta1 of ww { GHC.Types.I# ww1 ->
+                 Test.QuickCheck.Gen.$wlistOf
+                   @ GHC.Types.Char
+                   Test.QuickCheck.Arbitrary.$fArbitraryChar1
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Char>_R))
+                   eta
+                   ww1 }) -}
+9c5330b908a45ecb9009c74d2f6546ab
+  $stestProperty3 ::
+    ([GHC.Types.Char]
+     -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Char]
+                         -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty4
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+9aeb2f58865c20a5d23e48dd395ed138
+  $stestProperty4 ::
+    ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Char]
+                         -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+7abb746cb1bf490e29bdb11833fc4235
+  $stestProperty5 ::
+    ([GHC.Types.Char] -> GHC.Types.Bool)
+    -> Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 3, Strictness: <L,C(U)><L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (f :: [GHC.Types.Char] -> GHC.Types.Bool)
+                   (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   f
+                   eta
+                   eta1) -}
+817174bb68285c7edfc0b057e7652bc5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Tests.UnitTests.$trModule2
+                   Tests.UnitTests.$trModule1) -}
+7a3730691fe7ef5bd8ae9ab81896ced8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Tests.UnitTests"#) -}
+dc4535bf6b4ac13b738f4a714fb9325e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+ba8ebf66b172f15c40e7abf9ed365c61
+  $wxs :: GHC.Prim.Int# -> [()]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+011e3a85d38314a0bc0dc773f92c3928
+  $wxs1 :: GHC.Prim.Int# -> [[()]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+f0715205bdf5d1ac3669feda866e955a
+  substring :: GHC.Base.String -> GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>,
+     Unfolding: (\ (x :: GHC.Base.String) (y :: GHC.Base.String) ->
+                 letrec {
+                   tailsGo :: [GHC.Types.Char] -> Data.Monoid.Any
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (xs :: [GHC.Types.Char]) ->
+                     case Data.OldList.isPrefixOf
+                            @ GHC.Types.Char
+                            GHC.Classes.$fEqChar
+                            x
+                            xs of wild {
+                       GHC.Types.False
+                       -> case xs of wild1 {
+                            [] -> GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                            : ds xs' -> tailsGo xs' }
+                       GHC.Types.True
+                       -> GHC.Types.True `cast` (Sym (Data.Monoid.N:Any[0])) }
+                 } in
+                 (tailsGo y) `cast` (Data.Monoid.N:Any[0])) -}
+edee6393685d2324b23261ae6535526d
+  test_ch_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_ch_8
+                   Tests.UnitTests.test_ch_7
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+8352bba796a6f30901360482e0fc61fe
+  test_ch_10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail in choose 2"#) -}
+8d9815384bbadf33063564d2e438e3a0
+  test_ch_11 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty4
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_ch_3_f
+                   eta
+                   eta1) -}
+678e1ea06fa23027b7b04ff5ea410166
+  test_ch_12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "two chars in choose"#) -}
+677fbe62b1d53902f60684fdd168cd36
+  test_ch_13 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char]
+                      -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty3
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char]
+                          -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char]
+                                   -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_ch_4_f
+                   eta
+                   eta1) -}
+458af4ea78484d070356eaf3d6c61eb4
+  test_ch_14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "choose and seq 1"#) -}
+8c8ef043037ccb2594e6b8334358e615
+  test_ch_15 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char]
+                      -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty3
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char]
+                          -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char]
+                                   -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_ch_5_f
+                   eta
+                   eta1) -}
+a19a82860ce6ffd53147901801051e86
+  test_ch_16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "choose and seq 2"#) -}
+ff46cedd5d630e21014f094967fe219f
+  test_ch_1_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Base.eqString
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ GHC.Types.Char
+                      (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char)
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ GHC.Types.Char
+                      (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char)
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Choose
+                             @ GHC.Types.Char
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)
+                             (Hare.Fail @ GHC.Types.Char)))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))) -}
+dce3b5efc9573b2af706237c2e13cbfa
+  test_ch_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_ch_10
+                   Tests.UnitTests.test_ch_9
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+fce2b168661823aaf398988cdbbcfc7c
+  test_ch_2_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Base.eqString
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ GHC.Types.Char
+                      (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char)
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ GHC.Types.Char
+                      (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char)
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Choose
+                             @ GHC.Types.Char
+                             (Hare.Fail @ GHC.Types.Char)
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))) -}
+e3d450ee8b75653f230e79fa9fc9e0ec
+  test_ch_3 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_ch_12
+                   Tests.UnitTests.test_ch_11
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+9b6b10227139361e9018b33c819e96fc
+  test_ch_3_f ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String)
+                   (c1 :: [GHC.Types.Char])
+                   (c2 :: [GHC.Types.Char]) ->
+                 let {
+                   ds1 :: GHC.Base.Maybe GHC.Types.Char
+                   = case (Hare.matchAnywhere
+                             @ GHC.Base.Maybe
+                             @ GHC.Types.Char
+                             GHC.Base.$fAlternativeMaybe
+                             GHC.Base.$fMonadMaybe
+                             (Hare.Char
+                                @ GHC.Types.Char
+                                @~ <GHC.Types.Char>_N
+                                (GHC.Base.++ @ GHC.Types.Char c1 c2)))
+                            `cast`
+                          (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Types.Char>_N)
+                            s of wild {
+                       GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Types.Char
+                       GHC.Base.Just x
+                       -> GHC.Base.Just
+                            @ GHC.Types.Char
+                            (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char x) }
+                 } in
+                 case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ GHC.Types.Char
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         (Hare.Choose
+                            @ GHC.Types.Char
+                            (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)
+                            (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2)))
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Types.Char>_N)
+                        s of wild {
+                   GHC.Base.Nothing
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.True
+                        GHC.Base.Just ipv -> GHC.Types.False }
+                   GHC.Base.Just x
+                   -> case ds1 of wild1 {
+                        GHC.Base.Nothing -> GHC.Types.False
+                        GHC.Base.Just b1
+                        -> case x of wild2 { (,) ds2 y -> GHC.Classes.eqChar y b1 } } }) -}
+9a6e0094bfe127728e045c64f2d9e45c
+  test_ch_4 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_ch_14
+                   Tests.UnitTests.test_ch_13
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+7a9e9111eb1845641387513bb2753e99
+  test_ch_4_f ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String)
+                   (c1 :: [GHC.Types.Char])
+                   (c2 :: [GHC.Types.Char])
+                   (c3 :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.UnitTests.$s$fEq(,)2
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, GHC.Types.Char))
+                      @ (GHC.Types.Char, GHC.Types.Char)
+                      (Data.Tuple.snd
+                         @ GHC.Base.String
+                         @ (GHC.Types.Char, GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ (GHC.Types.Char, GHC.Types.Char)
+                             @ GHC.Types.Char
+                             @ GHC.Types.Char
+                             @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)
+                             (Hare.Choose
+                                @ GHC.Types.Char
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c3))))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, GHC.Types.Char)>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, GHC.Types.Char))
+                      @ (GHC.Types.Char, GHC.Types.Char)
+                      (Data.Tuple.snd
+                         @ GHC.Base.String
+                         @ (GHC.Types.Char, GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Choose
+                             @ (GHC.Types.Char, GHC.Types.Char)
+                             (Hare.Seq
+                                @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2))
+                             (Hare.Seq
+                                @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c3))))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, GHC.Types.Char)>_N)
+                         s))) -}
+cd255fb2bc3317eb6da41991abbcc783
+  test_ch_5 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_ch_16
+                   Tests.UnitTests.test_ch_15
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+9572a035bc37e26fd60e04d742a88c7b
+  test_ch_5_f ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String)
+                   (c1 :: [GHC.Types.Char])
+                   (c2 :: [GHC.Types.Char])
+                   (c3 :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ (GHC.Types.Char, GHC.Types.Char)
+                   Tests.UnitTests.$s$fEq(,)2
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, GHC.Types.Char))
+                      @ (GHC.Types.Char, GHC.Types.Char)
+                      (Data.Tuple.snd
+                         @ GHC.Base.String
+                         @ (GHC.Types.Char, GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ (GHC.Types.Char, GHC.Types.Char)
+                             @ GHC.Types.Char
+                             @ GHC.Types.Char
+                             @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                             (Hare.Choose
+                                @ GHC.Types.Char
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c3))
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, GHC.Types.Char)>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, GHC.Types.Char))
+                      @ (GHC.Types.Char, GHC.Types.Char)
+                      (Data.Tuple.snd
+                         @ GHC.Base.String
+                         @ (GHC.Types.Char, GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Choose
+                             @ (GHC.Types.Char, GHC.Types.Char)
+                             (Hare.Seq
+                                @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1))
+                             (Hare.Seq
+                                @ (GHC.Types.Char, GHC.Types.Char)
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c3)
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1))))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, GHC.Types.Char)>_N)
+                         s))) -}
+bdf71d58cbb7ad4793d31c81f60fd188
+  test_ch_7 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_ch_1_f
+                   eta
+                   eta1) -}
+b45ccd5715f74a4728961372e346efca
+  test_ch_8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail in choose 1"#) -}
+af53d6b900a0fe6bc92aa90012f78a23
+  test_ch_9 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_ch_2_f
+                   eta
+                   eta1) -}
+2b69a39fc76cd7c00c14ebf167bb0970
+  test_char_filter :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_char_filter2
+                   Tests.UnitTests.test_char_filter1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+edbad060e25ecf28c87272e3c48e253d
+  test_char_filter1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_char_filter_f
+                   eta
+                   eta1) -}
+540aecde057670715f5d60b8928eccd1
+  test_char_filter2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "char (list) is like filter"#) -}
+b7b0a75c1b3205118290e3bf31a07107
+  test_char_filter_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (xs :: [GHC.Types.Char]) ->
+                 GHC.Base.eqString
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ GHC.Types.Char
+                      (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char)
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N xs))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))
+                   (GHC.List.filter
+                      @ GHC.Types.Char
+                      (\ (ds :: GHC.Types.Char) ->
+                       GHC.List.elem @ GHC.Types.Char GHC.Classes.$fEqChar ds xs)
+                      s)) -}
+537d2692cb53403a0b03552eaf64921d
+  test_char_maybe :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_char_maybe2
+                   Tests.UnitTests.test_char_maybe1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+084fd42a5416501add79cc3b3d3e5aa1
+  test_char_maybe1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ (GHC.Types.Char -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty10
+                     `cast`
+                   (Trans
+                        (<GHC.Types.Char -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <GHC.Types.Char -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_char_maybe_f
+                   eta
+                   eta1) -}
+1e28246d8d582cea443d658535805a11
+  test_char_maybe2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "char (maybe)"#) -}
+26eadc816e67251954dae3305681434b
+  test_char_maybe_f ::
+    [GHC.Types.Char] -> GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U(U)>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: GHC.Types.Char) ->
+                 case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ GHC.Types.Char
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         (Hare.Char
+                            @ GHC.Types.Char
+                            @~ <GHC.Types.Char>_N
+                            (GHC.Types.: @ GHC.Types.Char c (GHC.Types.[] @ GHC.Types.Char))))
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <GHC.Types.Char>_N)
+                        s of wild {
+                   GHC.Base.Nothing
+                   -> case GHC.List.elem
+                             @ GHC.Types.Char
+                             GHC.Classes.$fEqChar
+                             c
+                             s of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Base.Just x
+                   -> case x of wild1 { (,) ds1 y ->
+                      case y of wild2 { GHC.Types.C# x1 ->
+                      case c of wild3 { GHC.Types.C# y1 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.eqChar# x1 y1) of wild4 {
+                        GHC.Types.False
+                        -> case GHC.List.elem
+                                  @ GHC.Types.Char
+                                  GHC.Classes.$fEqChar
+                                  wild3
+                                  s of wild5 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False }
+                        GHC.Types.True
+                        -> GHC.List.elem
+                             @ GHC.Types.Char
+                             GHC.Classes.$fEqChar
+                             wild3
+                             s } } } } }) -}
+9cbe103f476e3cc3a99b4f4cf4cd4183
+  test_empty_list :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_empty_list2
+                   Tests.UnitTests.test_empty_list1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+e237fdaf76687a9302be35e16452b1c7
+  test_empty_list1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_empty_list_f
+                   eta
+                   eta1) -}
+992d55cd622efeb513dc7d07489a6b90
+  test_empty_list2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "empty (list)"#) -}
+073be867992f5cfc0bb8489602c33aab
+  test_empty_list_f :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char s 0# of ww2 { DEFAULT ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.+# ww2 1#
+                 } in
+                 let {
+                   arg :: [()]
+                   = GHC.Base.map
+                       @ (GHC.Base.String, ())
+                       @ ()
+                       (Data.Tuple.snd @ GHC.Base.String @ ())
+                       ((Hare.matchAnywhere
+                           @ []
+                           @ ()
+                           GHC.Base.$fAlternative[]
+                           GHC.Base.$fMonad[]
+                           Hare.$WEmpty)
+                          `cast`
+                        (HareMonad.N:Hare[0] <[]>_R <()>_N)
+                          s)
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0# y) of wild {
+                   GHC.Types.False
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ ()
+                        GHC.Classes.$fEq()
+                        arg
+                        (GHC.Types.[] @ ())
+                   GHC.Types.True
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ ()
+                        GHC.Classes.$fEq()
+                        arg
+                        (Tests.UnitTests.$wxs y) } }) -}
+fea2f7ec654fdd6096247cb3160513b6
+  test_empty_maybe :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_empty_maybe2
+                   Tests.UnitTests.test_empty_maybe1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+f98a46729fff7cbd4adc76984a6662a0
+  test_empty_maybe1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_empty_maybe_f
+                   eta
+                   eta1) -}
+4cb44999b61266c1e2479609711f57a6
+  test_empty_maybe2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "empty (maybe)"#) -}
+d226ff281699d3ff30e358c36a85c626
+  test_empty_maybe_f :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ ()
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         Hare.$WEmpty)
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <()>_N)
+                        s of wild {
+                   GHC.Base.Nothing -> GHC.Types.False
+                   GHC.Base.Just x
+                   -> case x of wild1 { (,) ds1 y ->
+                      case y of wild2 { () -> GHC.Types.True } } }) -}
+c668befb30ae6fb8b817d3f894f61163
+  test_fail_list :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_fail_list2
+                   Tests.UnitTests.test_fail_list1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+df1dbee3c888c091378b6e1c0890b6bb
+  test_fail_list1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_fail_list_f
+                   eta
+                   eta1) -}
+3a6731756e79d352f101c38d9e7b1735
+  test_fail_list2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail (list)"#) -}
+bb3b483c2cfeefbf1155e6eb1724c574
+  test_fail_list_f :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ ()
+                   GHC.Classes.$fEq()
+                   (GHC.Base.map
+                      @ (GHC.Base.String, ())
+                      @ ()
+                      (Data.Tuple.snd @ GHC.Base.String @ ())
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ ()
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Fail @ ()))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <()>_N)
+                         s))
+                   (GHC.Types.[] @ ())) -}
+b3e964f63aa2de392160796588f243bf
+  test_fail_maybe :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_fail_maybe2
+                   Tests.UnitTests.test_fail_maybe1
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+e7d80290348335d815866b8c9e13bf66
+  test_fail_maybe1 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_fail_maybe_f
+                   eta
+                   eta1) -}
+99de01d098a980f55080c11ebc0cb7e8
+  test_fail_maybe2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail (maybe)"#) -}
+9df4135f0e28280c70f71c54792f9f59
+  test_fail_maybe_f :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Base.String) ->
+                 case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ ()
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         (Hare.Fail @ ()))
+                        `cast`
+                      (HareMonad.N:Hare[0] <GHC.Base.Maybe>_R <()>_N)
+                        s of wild {
+                   GHC.Base.Nothing -> GHC.Types.True
+                   GHC.Base.Just x -> GHC.Types.False }) -}
+3ee5a843c00060872324e792daffa640
+  test_seq_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_seq_8
+                   Tests.UnitTests.test_seq_7
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+7a08d76104a4d3ae8a291c231df36f61
+  test_seq_10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail in seq 2"#) -}
+b2e7a6ee977e1287d8d333ca575412d1
+  test_seq_11 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_seq_3_f
+                   eta
+                   eta1) -}
+93a437b6367ace189816e8bb1d3125c4
+  test_seq_12 ::
+    (GHC.Base.String, GHC.Types.Char) -> ((), GHC.Types.Char)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (x :: (GHC.Base.String, GHC.Types.Char)) ->
+                 (GHC.Tuple.(),
+                  Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char x)) -}
+aa092a6386a34606fefbb402fcbc29c2
+  test_seq_13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "empty in seq 1"#) -}
+924397df82dcb167c75317d6a5d1b350
+  test_seq_14 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_seq_4_f
+                   eta
+                   eta1) -}
+d4f7888b1ab919880c9dfcc057326c5f
+  test_seq_15 ::
+    (GHC.Base.String, GHC.Types.Char) -> (GHC.Types.Char, ())
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (x :: (GHC.Base.String, GHC.Types.Char)) ->
+                 (Data.Tuple.snd @ GHC.Base.String @ GHC.Types.Char x,
+                  GHC.Tuple.())) -}
+aa52330bc5d4ea634086df3cba317d17
+  test_seq_16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "empty in seq 2"#) -}
+80d19926678c16da372519de2697d519
+  test_seq_17 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty4
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_seq_5_f
+                   eta
+                   eta1) -}
+5fefc5d8e4e012bac68799434c430f60
+  test_seq_18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "two chars in seq"#) -}
+6ea663d4e900d4bad512d4c9a31285e4
+  test_seq_1_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ ((), GHC.Types.Char)
+                   Tests.UnitTests.$s$fEq(,)
+                   (GHC.Base.map
+                      @ (GHC.Base.String, ((), GHC.Types.Char))
+                      @ ((), GHC.Types.Char)
+                      (Data.Tuple.snd @ GHC.Base.String @ ((), GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ ((), GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ ((), GHC.Types.Char)
+                             @ ()
+                             @ GHC.Types.Char
+                             @~ <((), GHC.Types.Char)>_N
+                             (Hare.Fail @ ())
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <((), GHC.Types.Char)>_N)
+                         s))
+                   (GHC.Types.[] @ ((), GHC.Types.Char))) -}
+bf9c2e63ae16725630269ff8c5df44f9
+  test_seq_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_seq_10
+                   Tests.UnitTests.test_seq_9
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+6365d4c718cae585756ed72a8055ae54
+  test_seq_2_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ (GHC.Types.Char, ())
+                   Tests.UnitTests.$s$fEq(,)1
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, ()))
+                      @ (GHC.Types.Char, ())
+                      (Data.Tuple.snd @ GHC.Base.String @ (GHC.Types.Char, ()))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, ())
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ (GHC.Types.Char, ())
+                             @ GHC.Types.Char
+                             @ ()
+                             @~ <(GHC.Types.Char, ())>_N
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)
+                             (Hare.Fail @ ())))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, ())>_N)
+                         s))
+                   (GHC.Types.[] @ (GHC.Types.Char, ()))) -}
+f99bd34acd09ee4d80a64175e3a595d4
+  test_seq_3 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_seq_13
+                   Tests.UnitTests.test_seq_11
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+8c819eda3d4a46ad4447111e66dd05fd
+  test_seq_3_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ ((), GHC.Types.Char)
+                   Tests.UnitTests.$s$fEq(,)
+                   (GHC.Base.map
+                      @ (GHC.Base.String, ((), GHC.Types.Char))
+                      @ ((), GHC.Types.Char)
+                      (Data.Tuple.snd @ GHC.Base.String @ ((), GHC.Types.Char))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ ((), GHC.Types.Char)
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ ((), GHC.Types.Char)
+                             @ ()
+                             @ GHC.Types.Char
+                             @~ <((), GHC.Types.Char)>_N
+                             Hare.$WEmpty
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <((), GHC.Types.Char)>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ ((), GHC.Types.Char)
+                      Tests.UnitTests.test_seq_12
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))) -}
+9f27e1dddce570687c380023fb89a6ee
+  test_seq_4 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_seq_16
+                   Tests.UnitTests.test_seq_14
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+db11c8cd2eddbfcbb71e6ef08140b311
+  test_seq_4_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 GHC.Classes.$fEq[]_$c==
+                   @ (GHC.Types.Char, ())
+                   Tests.UnitTests.$s$fEq(,)1
+                   (GHC.Base.map
+                      @ (GHC.Base.String, (GHC.Types.Char, ()))
+                      @ (GHC.Types.Char, ())
+                      (Data.Tuple.snd @ GHC.Base.String @ (GHC.Types.Char, ()))
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ (GHC.Types.Char, ())
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Seq
+                             @ (GHC.Types.Char, ())
+                             @ GHC.Types.Char
+                             @ ()
+                             @~ <(GHC.Types.Char, ())>_N
+                             (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)
+                             Hare.$WEmpty))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <(GHC.Types.Char, ())>_N)
+                         s))
+                   (GHC.Base.map
+                      @ (GHC.Base.String, GHC.Types.Char)
+                      @ (GHC.Types.Char, ())
+                      Tests.UnitTests.test_seq_15
+                      ((Hare.matchAnywhere
+                          @ []
+                          @ GHC.Types.Char
+                          GHC.Base.$fAlternative[]
+                          GHC.Base.$fMonad[]
+                          (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c))
+                         `cast`
+                       (HareMonad.N:Hare[0] <[]>_R <GHC.Types.Char>_N)
+                         s))) -}
+2649c612971e15e3d2a7e808183532cf
+  test_seq_5 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_seq_18
+                   Tests.UnitTests.test_seq_17
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+943289cfa7ed7c9b05f3c5856b4c1b9f
+  test_seq_5_f ::
+    [GHC.Types.Char]
+    -> [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String)
+                   (c1 :: [GHC.Types.Char])
+                   (c2 :: [GHC.Types.Char]) ->
+                 case (Hare.matchAnywhere
+                         @ GHC.Base.Maybe
+                         @ (GHC.Types.Char, GHC.Types.Char)
+                         GHC.Base.$fAlternativeMaybe
+                         GHC.Base.$fMonadMaybe
+                         (Hare.Seq
+                            @ (GHC.Types.Char, GHC.Types.Char)
+                            @ GHC.Types.Char
+                            @ GHC.Types.Char
+                            @~ <(GHC.Types.Char, GHC.Types.Char)>_N
+                            (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c1)
+                            (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c2)))
+                        `cast`
+                      (HareMonad.N:Hare[0]
+                           <GHC.Base.Maybe>_R <(GHC.Types.Char, GHC.Types.Char)>_N)
+                        s of wild {
+                   GHC.Base.Nothing
+                   -> letrec {
+                        go :: [GHC.Types.Char] -> Data.Monoid.Any
+                          {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds :: [GHC.Types.Char]) ->
+                          case ds of wild1 {
+                            [] -> GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                            : y ys
+                            -> let {
+                                 z :: Data.Monoid.Any = go ys
+                               } in
+                               letrec {
+                                 go1 :: [GHC.Types.Char] -> Data.Monoid.Any
+                                   {- Arity: 1, Strictness: <S,1*U> -}
+                                 = \ (ds1 :: [GHC.Types.Char]) ->
+                                   case ds1 of wild2 {
+                                     [] -> z
+                                     : y1 ys1
+                                     -> case Tests.UnitTests.substring
+                                               (GHC.Types.:
+                                                  @ GHC.Types.Char
+                                                  y
+                                                  (GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     y1
+                                                     (GHC.Types.[] @ GHC.Types.Char)))
+                                               s of wild3 {
+                                          GHC.Types.False -> go1 ys1
+                                          GHC.Types.True
+                                          -> GHC.Types.True `cast` (Sym (Data.Monoid.N:Any[0])) } }
+                               } in
+                               go1 c2 }
+                      } in
+                      case (go c1) `cast` (Data.Monoid.N:Any[0]) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Base.Just x
+                   -> case x of wild1 { (,) ds1 y ->
+                      case y of wild2 { (,) a b ->
+                      Tests.UnitTests.substring
+                        (GHC.Types.:
+                           @ GHC.Types.Char
+                           a
+                           (GHC.Types.: @ GHC.Types.Char b (GHC.Types.[] @ GHC.Types.Char)))
+                        s } } }) -}
+2c45d6f3e9cd55d0c1d5e4e68f8b8dd3
+  test_seq_7 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_seq_1_f
+                   eta
+                   eta1) -}
+435fd5a7d8d94e50ddd3407bbb70ee12
+  test_seq_8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fail in seq 1"#) -}
+982bd4e27f2b7df9c1de52d5f8bb8cbc
+  test_seq_9 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_seq_2_f
+                   eta
+                   eta1) -}
+55dbf9261039694404f59be983dc066e
+  test_star_1 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_star_5
+                   Tests.UnitTests.test_star_4
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+56ef29ccd26cd9f4b423883ccb6935c9
+  test_star_10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "star char"#) -}
+6d574e49c35cf665e06aaaec8ff78931
+  test_star_1_f :: GHC.Types.Int -> GHC.Types.Char -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: (\ (n :: GHC.Types.Int) (c :: GHC.Types.Char) ->
+                 let {
+                   lvl9 :: [GHC.Types.Char]
+                   = GHC.Types.: @ GHC.Types.Char c (GHC.Types.[] @ GHC.Types.Char)
+                 } in
+                 let {
+                   s :: [GHC.Types.Char]
+                   = case n of wild1 { GHC.Types.I# y ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<# 0# y) of wild {
+                       GHC.Types.False -> GHC.Types.[] @ GHC.Types.Char
+                       GHC.Types.True
+                       -> letrec {
+                            $wxs2 :: GHC.Prim.Int# -> [GHC.Types.Char]
+                              {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                            = \ (ww :: GHC.Prim.Int#) ->
+                              case ww of ds1 {
+                                DEFAULT
+                                -> GHC.Types.: @ GHC.Types.Char c ($wxs2 (GHC.Prim.-# ds1 1#))
+                                1# -> lvl9 }
+                          } in
+                          $wxs2 y } }
+                 } in
+                 GHC.Classes.$fEq[]_$s$c==2
+                   (Data.OldList.sortBy
+                      @ [GHC.Types.Char]
+                      GHC.Classes.$fOrd[]_$s$ccompare1
+                      (GHC.Base.map
+                         @ (GHC.Base.String, [GHC.Types.Char])
+                         @ [GHC.Types.Char]
+                         (Data.Tuple.snd @ GHC.Base.String @ [GHC.Types.Char])
+                         ((Hare.matchAnywhere
+                             @ []
+                             @ [GHC.Types.Char]
+                             GHC.Base.$fAlternative[]
+                             GHC.Base.$fMonad[]
+                             (Hare.Star
+                                @ [GHC.Types.Char]
+                                @ GHC.Types.Char
+                                @~ <[GHC.Types.Char]>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N lvl9)))
+                            `cast`
+                          (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                            s)))
+                   (Data.OldList.sortBy
+                      @ [GHC.Types.Char]
+                      GHC.Classes.$fOrd[]_$s$ccompare1
+                      (Tests.UnitTests.test_star_1_go
+                         (Data.OldList.inits @ GHC.Types.Char s)))) -}
+1f9a3d8f0b0fc557808c246afc1bd1bc
+  test_star_1_go :: [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,1*U> -}
+0b48de0c4062b525689f78eca2617ac0
+  test_star_2 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_star_8
+                   Tests.UnitTests.test_star_6
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+38792b288db205640a50ea429193b948
+  test_star_2_f :: [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Base.String) ->
+                 case GHC.List.$wlenAcc @ GHC.Types.Char s 0# of ww2 { DEFAULT ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.+# ww2 1#
+                 } in
+                 let {
+                   arg :: [[()]]
+                   = GHC.Base.map
+                       @ (GHC.Base.String, [()])
+                       @ [()]
+                       (Data.Tuple.snd @ GHC.Base.String @ [()])
+                       ((Hare.matchAnywhere
+                           @ []
+                           @ [()]
+                           GHC.Base.$fAlternative[]
+                           GHC.Base.$fMonad[]
+                           Tests.UnitTests.test_star_7)
+                          `cast`
+                        (HareMonad.N:Hare[0] <[]>_R <[()]>_N)
+                          s)
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0# y) of wild {
+                   GHC.Types.False
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ [()]
+                        Tests.UnitTests.$s$fEq[]
+                        arg
+                        (GHC.Types.[] @ [()])
+                   GHC.Types.True
+                   -> GHC.Classes.$fEq[]_$c==
+                        @ [()]
+                        Tests.UnitTests.$s$fEq[]
+                        arg
+                        (Tests.UnitTests.$wxs1 y) } }) -}
+842dde9a8f379661f9e1c6a421154ce0
+  test_star_3 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.QuickCheck.QC
+                   Test.Tasty.QuickCheck.$fIsTestQC
+                   Tests.UnitTests.test_star_10
+                   Tests.UnitTests.test_star_9
+                     `cast`
+                   (Trans
+                        (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                  (Test.QuickCheck.Property.N:Prop[0])))
+                        (Trans
+                             (Sym (Test.QuickCheck.Property.N:Property[0]))
+                             (Sym (Test.Tasty.QuickCheck.N:QC[0]))))) -}
+23b2509148fcdc4347c2d81f6772d577
+  test_star_3_f ::
+    [GHC.Types.Char] -> [GHC.Types.Char] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><L,U>,
+     Unfolding: (\ (s :: GHC.Base.String) (c :: [GHC.Types.Char]) ->
+                 letrec {
+                   go :: [GHC.Types.Char] -> Data.Monoid.Any
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Char]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.False `cast` (Sym (Data.Monoid.N:Any[0]))
+                       : y ys
+                       -> case GHC.List.elem
+                                 @ GHC.Types.Char
+                                 GHC.Classes.$fEqChar
+                                 y
+                                 c of wild1 {
+                            GHC.Types.False -> go ys
+                            GHC.Types.True
+                            -> GHC.Types.True `cast` (Sym (Data.Monoid.N:Any[0])) } }
+                 } in
+                 case (Tests.UnitTests.test_star_3_go
+                         ((Hare.matchAnywhere
+                             @ []
+                             @ [GHC.Types.Char]
+                             GHC.Base.$fAlternative[]
+                             GHC.Base.$fMonad[]
+                             (Hare.Star
+                                @ [GHC.Types.Char]
+                                @ GHC.Types.Char
+                                @~ <[GHC.Types.Char]>_N
+                                (Hare.Char @ GHC.Types.Char @~ <GHC.Types.Char>_N c)))
+                            `cast`
+                          (HareMonad.N:Hare[0] <[]>_R <[GHC.Types.Char]>_N)
+                            s))
+                        `cast`
+                      (Data.Monoid.N:All[0]) of wild {
+                   GHC.Types.False -> (go s) `cast` (Data.Monoid.N:Any[0])
+                   GHC.Types.True
+                   -> case (go s) `cast` (Data.Monoid.N:Any[0]) of wild1 {
+                        GHC.Types.False -> GHC.Types.True
+                        GHC.Types.True -> GHC.Types.False } }) -}
+e6be5affbea7debcc2aa0fb1d92256c9
+  test_star_3_go ::
+    [(GHC.Base.String, [GHC.Types.Char])] -> Data.Monoid.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+f3bcb2ecef11056f02615cb929b5ef46
+  test_star_4 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: Test.QuickCheck.Random.QCGen) (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ GHC.Types.Int
+                   @ (GHC.Types.Char -> GHC.Types.Bool)
+                   GHC.Show.$fShowInt
+                   Tests.UnitTests.$stestProperty10
+                     `cast`
+                   (Trans
+                        (<GHC.Types.Char -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <GHC.Types.Char -> GHC.Types.Bool>_N)))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt3
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <GHC.Types.Int>_R))
+                   Test.QuickCheck.Arbitrary.$fArbitraryInt_$sshrinkIntegral
+                   Tests.UnitTests.test_star_1_f
+                   eta
+                   eta1) -}
+ef5b6957ea648825f6f297ef7459c809
+  test_star_5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "star replicate"#) -}
+6ca3a67e1fb3ff24b7adf2972d96a0e1
+  test_star_6 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ GHC.Types.Bool
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Test.QuickCheck.Property.$fTestableBool_$cproperty
+                     `cast`
+                   (Sym (Test.QuickCheck.Property.N:Testable[0] <GHC.Types.Bool>_N))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_star_2_f
+                   eta
+                   eta1) -}
+787207a96aba488a9b0703190660c6f6
+  test_star_7 :: Hare.RE [()]
+  {- HasNoCafRefs,
+     Unfolding: (Hare.Star @ [()] @ () @~ <[()]>_N (Hare.Fail @ ())) -}
+a5024daa24e85d1d149c521011203b6b
+  test_star_8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "star fail"#) -}
+225733e805ccf5c35b42a1f20788ef40
+  test_star_9 ::
+    Test.QuickCheck.Random.QCGen
+    -> GHC.Types.Int
+    -> Test.QuickCheck.Property.Rose Test.QuickCheck.Property.Result
+  {- Arity: 2, Strictness: <L,U(U,U,U,U,A,A)><L,U>,
+     Unfolding: (\ (eta :: Test.QuickCheck.Random.QCGen)
+                   (eta1 :: GHC.Types.Int) ->
+                 Test.QuickCheck.Property.$fTestable(->)2
+                   @ [GHC.Types.Char]
+                   @ ([GHC.Types.Char] -> GHC.Types.Bool)
+                   GHC.Show.$fShow[]_$s$fShow[]1
+                   Tests.UnitTests.$stestProperty5
+                     `cast`
+                   (Trans
+                        (<[GHC.Types.Char] -> GHC.Types.Bool>_R
+                         ->_R Trans
+                                  (Sym (Test.QuickCheck.Gen.N:Gen[0]
+                                            (Test.QuickCheck.Property.N:Prop[0])))
+                                  (Sym (Test.QuickCheck.Property.N:Property[0])))
+                        (Sym (Test.QuickCheck.Property.N:Testable[0]
+                                  <[GHC.Types.Char] -> GHC.Types.Bool>_N)))
+                   Tests.UnitTests.$stestProperty2
+                     `cast`
+                   (Sym (Test.QuickCheck.Gen.N:Gen[0] <[GHC.Types.Char]>_R))
+                   Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+                   Tests.UnitTests.test_star_3_f
+                   eta
+                   eta1) -}
+"SPEC/Tests.UnitTests $fArbitrary[]_$cshrink @ Char" [ALWAYS] forall ($dArbitrary :: Test.QuickCheck.Arbitrary.Arbitrary
+                                                                                       GHC.Types.Char)
+  Test.QuickCheck.Arbitrary.$fArbitrary[]_$cshrink @ GHC.Types.Char
+                                                   $dArbitrary
+  = Tests.UnitTests.$s$fArbitrary[]_$s$fArbitrary[]_$cshrink
+"SPEC/Tests.UnitTests $fEq(,) @ () @ Char" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                       GHC.Types.Char)
+                                                           ($dEq :: GHC.Classes.Eq ())
+  GHC.Classes.$fEq(,) @ () @ GHC.Types.Char $dEq $dEq1
+  = Tests.UnitTests.$s$fEq(,)
+"SPEC/Tests.UnitTests $fEq(,) @ Char @ ()" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                       ())
+                                                           ($dEq :: GHC.Classes.Eq GHC.Types.Char)
+  GHC.Classes.$fEq(,) @ GHC.Types.Char @ () $dEq $dEq1
+  = Tests.UnitTests.$s$fEq(,)1
+"SPEC/Tests.UnitTests $fEq(,) @ Char @ Char" [ALWAYS] forall ($dEq1 :: GHC.Classes.Eq
+                                                                         GHC.Types.Char)
+                                                             ($dEq :: GHC.Classes.Eq GHC.Types.Char)
+  GHC.Classes.$fEq(,) @ GHC.Types.Char @ GHC.Types.Char $dEq $dEq1
+  = Tests.UnitTests.$s$fEq(,)2
+"SPEC/Tests.UnitTests $fEq[] @ ()" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                              ())
+  GHC.Classes.$fEq[] @ () $dEq = Tests.UnitTests.$s$fEq[]
+"SPEC/Tests.UnitTests $fEq[]_$c/= @ ()" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                   ())
+  GHC.Classes.$fEq[]_$c/= @ () $dEq
+  = Tests.UnitTests.$s$fEq[]_$s$fEq[]_$c/=
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

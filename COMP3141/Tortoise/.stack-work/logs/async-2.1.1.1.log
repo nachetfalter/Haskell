@@ -1,0 +1,6 @@
+Configuring async-2.1.1.1...
+Preprocessing library for async-2.1.1.1..
+Building library for async-2.1.1.1..
+[1 of 1] Compiling Control.Concurrent.Async ( Control\Concurrent\Async.hs, .stack-work\dist\5c8418a7\build\Control\Concurrent\Async.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\async-2.1.1.1-H3j65XcXMHtBvmNwGCQ80G
+Registering library for async-2.1.1.1..

@@ -1,0 +1,14 @@
+name: Ex09
+version: 1.0
+cabal-version: >= 1.11
+build-type: Simple
+license: AllRightsReserved
+stability: experimental
+x-ghc-framework-version: 8.0.2-8.9-3
+x-last-ide-version: HfM1.5.1
+Executable Ex09
+  main-is: Ex09.hs
+  buildable: True
+  build-depends:
+      base -any,
+      QuickCheck -any

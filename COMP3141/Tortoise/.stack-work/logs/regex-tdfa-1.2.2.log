@@ -1,0 +1,88 @@
+Configuring regex-tdfa-1.2.2...
+Preprocessing library for regex-tdfa-1.2.2..
+Building library for regex-tdfa-1.2.2..
+[ 1 of 23] Compiling Data.IntMap.CharMap2 ( Data\IntMap\CharMap2.hs, .stack-work\dist\5c8418a7\build\Data\IntMap\CharMap2.o )
+
+[;1mData\IntMap\CharMap2.hs:150:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `fold' (imported from Data.IntMap):
+    Deprecated: "As of version 0.5, replaced by 'foldr'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m150 |[0m[0m fold f a (CharMap m) = [;1m[35mM.fold[0m[0m f a m
+[;1m[34m    |[0m[0m[;1m[35m                        ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\CharMap2.hs:153:31: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `foldWithKey' (imported from Data.IntMap):
+    Deprecated: "As of version 0.5, replaced by 'foldrWithKey'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m153 |[0m[0m foldWithKey f a (CharMap m) = [;1m[35mM.foldWithKey[0m[0m f' a m
+[;1m[34m    |[0m[0m[;1m[35m                               ^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\CharMap2.hs:250:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `showTree'
+    (imported from Data.IntMap, but defined in containers-0.5.10.2:Data.IntMap.Internal.DeprecatedDebug):
+    Deprecated: "These debugging functions will be removed from this module. They are available from Data.IntMap.Internal.Debug."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m250 |[0m[0m showTree (CharMap m) = [;1m[35mM.showTree[0m[0m m
+[;1m[34m    |[0m[0m[;1m[35m                        ^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\CharMap2.hs:253:34: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `showTreeWith'
+    (imported from Data.IntMap, but defined in containers-0.5.10.2:Data.IntMap.Internal.DeprecatedDebug):
+    Deprecated: "These debugging functions will be removed from this module. They are available from Data.IntMap.Internal.Debug."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m253 |[0m[0m showTreeWith b1 b2 (CharMap m) = [;1m[35mM.showTreeWith[0m[0m b1 b2 m
+[;1m[34m    |[0m[0m[;1m[35m                                  ^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 2 of 23] Compiling Data.IntSet.EnumSet2 ( Data\IntSet\EnumSet2.hs, .stack-work\dist\5c8418a7\build\Data\IntSet\EnumSet2.o )
+[ 3 of 23] Compiling Data.IntMap.EnumMap2 ( Data\IntMap\EnumMap2.hs, .stack-work\dist\5c8418a7\build\Data\IntMap\EnumMap2.o )
+
+[;1mData\IntMap\EnumMap2.hs:144:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `fold' (imported from Data.IntMap):
+    Deprecated: "As of version 0.5, replaced by 'foldr'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m144 |[0m[0m fold f a (EnumMap m) = [;1m[35mM.fold[0m[0m f a m
+[;1m[34m    |[0m[0m[;1m[35m                        ^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\EnumMap2.hs:147:31: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `foldWithKey' (imported from Data.IntMap):
+    Deprecated: "As of version 0.5, replaced by 'foldrWithKey'."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m147 |[0m[0m foldWithKey f a (EnumMap m) = [;1m[35mM.foldWithKey[0m[0m f' a m
+[;1m[34m    |[0m[0m[;1m[35m                               ^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\EnumMap2.hs:245:24: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `showTree'
+    (imported from Data.IntMap, but defined in containers-0.5.10.2:Data.IntMap.Internal.DeprecatedDebug):
+    Deprecated: "These debugging functions will be removed from this module. They are available from Data.IntMap.Internal.Debug."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m245 |[0m[0m showTree (EnumMap m) = [;1m[35mM.showTree[0m[0m m
+[;1m[34m    |[0m[0m[;1m[35m                        ^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData\IntMap\EnumMap2.hs:248:34: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wdeprecations[0m[0m[;1m][0m[0m[;1m
+    In the use of `showTreeWith'
+    (imported from Data.IntMap, but defined in containers-0.5.10.2:Data.IntMap.Internal.DeprecatedDebug):
+    Deprecated: "These debugging functions will be removed from this module. They are available from Data.IntMap.Internal.Debug."[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m248 |[0m[0m showTreeWith b1 b2 (EnumMap m) = [;1m[35mM.showTreeWith[0m[0m b1 b2 m
+[;1m[34m    |[0m[0m[;1m[35m                                  ^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 4 of 23] Compiling Paths_regex_tdfa ( .stack-work\dist\5c8418a7\build\autogen\Paths_regex_tdfa.hs, .stack-work\dist\5c8418a7\build\Paths_regex_tdfa.o )
+[ 5 of 23] Compiling Text.Regex.TDFA.IntArrTrieSet ( Text\Regex\TDFA\IntArrTrieSet.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\IntArrTrieSet.o )
+[ 6 of 23] Compiling Text.Regex.TDFA.Common ( Text\Regex\TDFA\Common.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\Common.o )
+[ 7 of 23] Compiling Text.Regex.TDFA.NewDFA.Uncons ( Text\Regex\TDFA\NewDFA\Uncons.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Uncons.o )
+[ 8 of 23] Compiling Text.Regex.TDFA.NewDFA.MakeTest ( Text\Regex\TDFA\NewDFA\MakeTest.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\MakeTest.o )
+[ 9 of 23] Compiling Text.Regex.TDFA.NewDFA.Tester ( Text\Regex\TDFA\NewDFA\Tester.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Tester.o )
+[10 of 23] Compiling Text.Regex.TDFA.NewDFA.Engine_NC_FA ( Text\Regex\TDFA\NewDFA\Engine_NC_FA.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Engine_NC_FA.o )
+[11 of 23] Compiling Text.Regex.TDFA.NewDFA.Engine_NC ( Text\Regex\TDFA\NewDFA\Engine_NC.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Engine_NC.o )
+[12 of 23] Compiling Text.Regex.TDFA.NewDFA.Engine_FA ( Text\Regex\TDFA\NewDFA\Engine_FA.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Engine_FA.o )
+[13 of 23] Compiling Text.Regex.TDFA.NewDFA.Engine ( Text\Regex\TDFA\NewDFA\Engine.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\NewDFA\Engine.o )
+[14 of 23] Compiling Text.Regex.TDFA.Pattern ( Text\Regex\TDFA\Pattern.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\Pattern.o )
+[15 of 23] Compiling Text.Regex.TDFA.CorePattern ( Text\Regex\TDFA\CorePattern.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\CorePattern.o )
+[16 of 23] Compiling Text.Regex.TDFA.ReadRegex ( Text\Regex\TDFA\ReadRegex.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\ReadRegex.o )
+[17 of 23] Compiling Text.Regex.TDFA.TNFA ( Text\Regex\TDFA\TNFA.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\TNFA.o )
+[18 of 23] Compiling Text.Regex.TDFA.TDFA ( Text\Regex\TDFA\TDFA.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\TDFA.o )
+[19 of 23] Compiling Text.Regex.TDFA.String ( Text\Regex\TDFA\String.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\String.o )
+[20 of 23] Compiling Text.Regex.TDFA.Sequence ( Text\Regex\TDFA\Sequence.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\Sequence.o )
+[21 of 23] Compiling Text.Regex.TDFA.ByteString.Lazy ( Text\Regex\TDFA\ByteString\Lazy.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\ByteString\Lazy.o )
+[22 of 23] Compiling Text.Regex.TDFA.ByteString ( Text\Regex\TDFA\ByteString.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA\ByteString.o )
+[23 of 23] Compiling Text.Regex.TDFA  ( Text\Regex\TDFA.hs, .stack-work\dist\5c8418a7\build\Text\Regex\TDFA.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\regex-tdfa-1.2.2-DCTOgP33huj6tdQU80QcWB
+Registering library for regex-tdfa-1.2.2..

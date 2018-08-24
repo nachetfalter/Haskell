@@ -1,0 +1,10 @@
+[1 of 2] Compiling Main             ( C:\Users\wuaiw\AppData\Local\Temp\stack4476\distributive-0.5.3\Setup.lhs, C:\Users\wuaiw\AppData\Local\Temp\stack4476\distributive-0.5.3\.stack-work\dist\5c8418a7\setup\Main.o )
+[2 of 2] Compiling StackSetupShim   ( C:\sr\setup-exe-src\setup-shim-Z6RU0evB.hs, C:\Users\wuaiw\AppData\Local\Temp\stack4476\distributive-0.5.3\.stack-work\dist\5c8418a7\setup\StackSetupShim.o )
+Linking C:\Users\wuaiw\AppData\Local\Temp\stack4476\distributive-0.5.3\.stack-work\dist\5c8418a7\setup\setup.exe ...
+Configuring distributive-0.5.3...
+Preprocessing library for distributive-0.5.3..
+Building library for distributive-0.5.3..
+[1 of 2] Compiling Data.Distributive ( src\Data\Distributive.hs, .stack-work\dist\5c8418a7\build\Data\Distributive.o )
+[2 of 2] Compiling Data.Distributive.Generic ( src\Data\Distributive\Generic.hs, .stack-work\dist\5c8418a7\build\Data\Distributive\Generic.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\distributive-0.5.3-Bots8MXh3UTCJnyeMycJ7n
+Registering library for distributive-0.5.3..

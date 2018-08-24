@@ -1,0 +1,6 @@
+Configuring cabal-doctest-1.0.4...
+Preprocessing library for cabal-doctest-1.0.4..
+Building library for cabal-doctest-1.0.4..
+[1 of 1] Compiling Distribution.Extra.Doctest ( src\Distribution\Extra\Doctest.hs, .stack-work\dist\5c8418a7\build\Distribution\Extra\Doctest.o )
+Installing library in C:\sr\snapshots\13cecb13\lib\x86_64-windows-ghc-8.2.2\cabal-doctest-1.0.4-LtpyS2VHPzoIHFBrWlKEBm
+Registering library for cabal-doctest-1.0.4..
